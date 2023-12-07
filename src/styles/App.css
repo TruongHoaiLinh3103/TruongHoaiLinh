@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Dancing+Script&family=Roboto:wght@300;400;500;700;900&family=Titillium+Web:wght@200&display=swap');
+* {
+    cursor: url('https://i.pinimg.com/originals/65/7d/04/657d048e53bc315b7a73b7e85a5e46d4.png'), auto !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-image: url("https://img5.thuthuatphanmem.vn/uploads/2022/01/05/anh-dep-ve-thien-ha-vu-tru_023158835.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

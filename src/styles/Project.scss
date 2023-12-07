@@ -1,0 +1,399 @@
+@import "./Variable.scss";
+
+.conteudo-gerals {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  height: 100vh;
+  padding: 100px 20px;
+  width: 100%;
+}
+.componente-interno-geral {
+  position: relative;
+  height: 100%;
+}
+.componente-interno-geral:hover .componente-fundo-imagem:after {
+  opacity: 1;
+}
+
+.componente {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 48.7%;
+  height: 100%;
+  background: #252525;
+  transition: transform 0.6s 0.7s, width 0.7s, opacity 0.6s 0.7s,
+  z-index 0s 1.3s;
+  will-change: transform, width, opacity;
+}
+.componente:not(.caixa-conteudo-ativo) {
+  cursor: pointer;
+}
+.componente-sem-rolagem {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+.componente-interno {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  transition: transform 1s;
+}
+.conteudo-gerals.js-conteudo-geral .componente-interno {
+  transform: translate3d(0, 100%, 0);
+}
+.componente-fundo-imagem {
+  position: relative;
+  height: 100%;
+  transition: transform 0.6s 0.7s;
+  will-change: transform;
+  width: 100%;
+}
+
+.componente-fundo-imagem:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -5%;
+  width: 100%;
+  height: 110%;
+  background-size: cover;
+  background-position: center center;
+  transition: transform 1s;
+  transform: translate3d(0, 0, 0) scale(1);
+}
+
+.conteudo-gerals.js-conteudo-geral .componente-fundo-imagem:before {
+  transform: translate3d(0, -100%, 0) scale(1.2);
+}
+.componente.caixa-conteudo-ativo .componente-fundo-imagem:before {
+  transition: transform 0.8s;
+}
+.componente-fundo-imagem:after {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.conteudo-gerals.caixa--componente-ativo .componente-fundo-imagem:after {
+  transition: opacity 0.5s 1.4s;
+  opacity: 1 !important;
+}
+.componente-visual-inicial {
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 2rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s 1.2s;
+}
+.conteudo-gerals.js-conteudo-geral .componente-visual-inicial {
+  opacity: 0;
+  transform: translateY(10px);
+}
+.conteudo-gerals.caixa--componente-ativo .componente-visual-inicial {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.5s;
+}
+.componente-titulo {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.componente-content {
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.1s;
+}
+.componente.caixa-conteudo-ativo .componente-content {
+  z-index: 2;
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.5s 1.4s;
+}
+.componente-text {
+  width: 85%;
+  height: 100%;
+  padding: 20px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.componente-text h3{
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #fff;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.componente-text::-webkit-scrollbar{
+  display: none;
+}
+.componente-text_item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.componente-text_item + .componente-text_item{
+  margin-top: 30px;
+}
+
+.componente-text-detail div{
+  display: flex;
+  + div{
+    margin-top: 10px;
+  }
+  h4{
+    color: #fff;
+    font-size: 18px;
+  }
+  a{
+    text-decoration: none;
+  }
+  p{
+    font-size: 18px;
+    margin-left: 10px;
+    color: rgb(81, 255, 0);
+  }
+}
+.componente-text-img{
+  width: 250px;
+  height: 150px;
+  overflow: hidden;
+}
+.componente-text-img img, .componente-text-img video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all ease-in-out .3s;
+  &:hover{
+    transform: scale(1.2);
+  }
+}
+
+.componente-botao-fechar {
+  z-index: -1;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0s 0.45s;
+  cursor: pointer;
+}
+.componente.caixa-conteudo-ativo .componente-botao-fechar {
+  z-index: 5;
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0s 1.4s;
+}
+.componente-botao-fechar:before,
+.componente-botao-fechar:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 8px;
+  margin-top: -4px;
+  background: #fff;
+  opacity: 0;
+  transition: opacity 0s;
+}
+.componente.caixa-conteudo-ativo .componente-botao-fechar:before,
+.componente.caixa-conteudo-ativo .componente-botao-fechar:after {
+  opacity: 1;
+}
+.componente-botao-fechar:before {
+  transform: rotate(45deg) translateX(100%);
+}
+.componente.caixa-conteudo-ativo .componente-botao-fechar:before {
+  transition: all 0.3s 1.4s cubic-bezier(0.72, 0.09, 0.32, 1.57);
+  transform: rotate(45deg) translateX(0);
+}
+.componente-botao-fechar:after {
+  transform: rotate(-45deg) translateX(100%);
+}
+.componente.caixa-conteudo-ativo .componente-botao-fechar:after {
+  transition: all 0.3s 1.55s cubic-bezier(0.72, 0.09, 0.32, 1.57);
+  transform: rotate(-45deg) translateX(0);
+}
+.componente-index {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  min-height: 250px;
+  text-align: center;
+  font-size: 20vw;
+  line-height: 0.85;
+  font-weight: bold;
+  transition: transform 0.5s, opacity 0.3s 1.4s;
+  transform: translate3d(0, 1vw, 0);
+}
+.componente:hover .componente-index {
+  transform: translate3d(0, 0, 0);
+}
+.conteudo-gerals.caixa--componente-ativo .componente-index {
+  transition: transform 0.5s, opacity 0.3s;
+  opacity: 0;
+}
+.componente-index-back,
+.componente-index-front {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.componente-index-back {
+  color: #2f3840;
+  opacity: 0;
+  transition: opacity 0.25s 0.25s;
+}
+.componente:hover .componente-index-back {
+  transition: opacity 0.25s;
+  opacity: 1;
+}
+.componente-index-overlay {
+  overflow: hidden;
+  position: relative;
+  transform: translate3d(0, 100%, 0);
+  transition: transform 0.5s 0.1s;
+  color: transparent;
+}
+.componente-index-overlay:before {
+  content: attr(data-index);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  transform: translate3d(0, -100%, 0);
+  transition: transform 0.5s 0.1s;
+}
+.componente:hover .componente-index-overlay {
+  transform: translate3d(0, 0, 0);
+}
+.componente:hover .componente-index-overlay:before {
+  transform: translate3d(0, 0, 0);
+}
+.componente:nth-child(1) {
+  transform: translate3d(0%, 0, 0);
+  transform-origin: 50% 50%;
+}
+.conteudo-gerals.caixa--componente-ativo
+  .componente:nth-child(1):not(.caixa-conteudo-ativo) {
+  transform: scale(0.5) translate3d(0%, 0, 0);
+  opacity: 0;
+  transition: transform 0.95s, opacity 0.95s;
+}
+.componente:nth-child(1) .componente-interno {
+  transition-delay: 0s;
+}
+.componente:nth-child(1) .componente-fundo-imagem {
+  transform: translate3d(0%, 0, 0);
+}
+.componente:nth-child(1) .componente-fundo-imagem:before {
+  transition-delay: 0s;
+  background-image: url("../../public/ic-react.jpg");
+  background-size: cover;
+}
+.componente:nth-child(2) {
+  transform: translate3d(105.2083333333%, 0, 0);
+  transform-origin: 155.2083333333% 50%;
+}
+.conteudo-gerals.caixa--componente-ativo
+  .componente:nth-child(2):not(.caixa-conteudo-ativo) {
+  transform: scale(0.5) translate3d(105.2083333333%, 0, 0);
+  opacity: 0;
+  transition: transform 0.95s, opacity 0.95s;
+}
+.componente:nth-child(2) .componente-interno {
+  transition-delay: 0.1s;
+}
+.componente:nth-child(2) .componente-fundo-imagem:before {
+  transition-delay: 0.1s;
+  background-image: url("../../public/ic-git.jpg");
+  background-size: cover;
+}
+
+.componente:hover .componente-fundo-imagem:after {
+  opacity: 0;
+}
+.componente.caixa-conteudo-ativo {
+  z-index: 1;
+  width: 100%;
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.6s, width 0.7s 0.7s, z-index 0s;
+}
+.componente.caixa-conteudo-ativo .componente-fundo-imagem {
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.6s;
+}
+.componente.caixa-conteudo-ativo .componente-fundo-imagem:before {
+  transition-delay: 0.6s;
+  transform: scale(1.1);
+}
+
+.Skills{
+  .Skill_navigation{
+    position: absolute;
+    top: 0;
+    right: 20;
+    ul{
+      margin: 20px 20px 0px;
+      @extend %ulBtn;
+      li{
+        @extend %liBtn;
+        +li{
+          @extend %liNextBtn;
+        }
+        svg{
+          @extend %iconBtn;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .componente-titulo {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 78.9375em){
+  .componente-text_item{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .componente-text-img{
+    margin-top: 10px;
+  }
+}

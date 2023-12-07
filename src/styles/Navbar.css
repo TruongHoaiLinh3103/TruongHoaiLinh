@@ -1,0 +1,100 @@
+.Navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.Navbar .Navbar-box{
+  text-align: center;
+  text-decoration: none;
+  cursor:auto;
+}
+.Navbar .Navbar-box span{
+  text-decoration: none;
+  font-size: 3em;
+  padding: 5px 20px;
+  display: inline-flex;
+  font-weight: 700;
+  transition: 0.5s;
+  cursor: pointer;
+  user-select: none;
+  color: rgba(255, 255, 255, .1);
+  background: linear-gradient(to right,
+          rgb(245, 0, 0),
+          rgb(255, 128, 0),
+          rgb(255, 204, 0),
+          rgb(111, 255, 0),
+          rgb(2, 241, 253),
+          rgb(10, 6, 239),
+          rgb(173, 10, 227),
+          rgb(0, 0, 0));
+  background-size: 400%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: sTransition 10s linear infinite;
+}
+@keyframes sTransition {
+  0% {
+      background-position: 0%;
+  }
+
+  100% {
+      background-position: 400%;
+  }
+}
+.Navbar span:hover{
+  color: #000;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 5px;
+}
+.Navbar .Navbar-box span:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4em;
+  color: rgba(0, 0, 0, 0.1);
+  z-index: -1;
+  opacity: 0;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 500px;
+  transition: letter-spacing 0.5s, left 0.5s;
+  width: 100%;
+  height: 100%;
+}
+.Navbar .Navbar-box span:hover:before {
+  content: attr(data-texto);
+  opacity: 1;
+  letter-spacing: 10px;
+}
+.Navbar .Navbar-box:nth-child(6n + 1) span:before {
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 18%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 80%);
+}
+.Navbar .Navbar-box:nth-child(6n + 2) span:before {
+  background: rgb(131,180,58);
+  background: linear-gradient(90deg, rgba(131,180,58,1) 18%, rgba(189,29,253,1) 50%, rgba(252,69,69,1) 80%);
+}
+.Navbar .Navbar-box:nth-child(6n + 3) span:before {
+  background: rgb(58,174,180);
+  background: linear-gradient(90deg, rgba(58,174,180,1) 18%, rgba(253,192,29,1) 50%, rgba(227,69,252,1) 80%);
+}
+.Navbar .Navbar-box:nth-child(6n + 4) span:before {
+  background: rgb(151,58,180);
+  background: linear-gradient(90deg, rgba(151,58,180,1) 18%, rgba(253,143,29,1) 50%, rgba(69,172,252,1) 80%);
+}
+.Navbar .Navbar-box:nth-child(6n + 5) span:before {
+  background: rgb(58,180,174);
+  background: linear-gradient(90deg, rgba(58,180,174,1) 18%, rgba(249,29,253,1) 50%, rgba(252,69,69,1) 80%);
+}
