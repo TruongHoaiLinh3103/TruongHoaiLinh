@@ -2,7 +2,6 @@
 
 import React from 'react';
 import "../../styles/Home.scss";
-import "../../styles/Grid.css";
 import { Typewriter } from 'react-simple-typewriter';
 import FetchAOS from "../../utils/FetchAOS";
 import { DOCUMENT } from '../../story/DOCUMENT';
@@ -35,7 +34,7 @@ const Page = () => {
             </nav>
             {DOCUMENT.map((item) => {
                 return(
-                    <section className='Home-section maxWidth1000px' key={item.id}>
+                    <section className='Home-section' key={item.id}>
                         <div className='Home-section-item' data-aos="fade-right">
                             <h3>A Frontend Developer that creates free quality content.</h3>
                             <h3>I,m <Typewriter

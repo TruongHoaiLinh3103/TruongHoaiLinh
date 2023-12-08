@@ -53,6 +53,9 @@
 .Home-section{
     display: grid;
     grid-template-columns: 50% 50%;
+    max-width: 100%;
+    width: 1000px;
+    margin: 0px auto;
 }
 .Home-section-item{
     padding: 20px;

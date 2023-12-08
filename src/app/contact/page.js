@@ -5,9 +5,6 @@ import "../../styles/Contact.scss";
 import FetchLoading from '../../utils/FetchLoading';
 import FetchAOS from '../../utils/FetchAOS';
 import { useRouter } from 'next/navigation';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import 'react-toastify/dist/ReactToastify.css';
 import { useState } from 'react';
 import { QR } from '../../story/QR';
 import { FaQrcode, FaBlogger, FaAddressCard, FaBible, FaPinterest, FaPhone, FaEnvelope, FaFacebook, FaInstagram, FaTiktok, FaGit } from "react-icons/fa";
@@ -27,7 +24,7 @@ const Page = () => {
     const [navbar, setNavbar] = useState(false)
     FetchAOS();
     const alerAdress = () => {
-        toast("12/9 Tân Thới Nhất 5, Tân Thới Nhất, Quận 12, TP.HCM");
+        alert("12/9 Tân Thới Nhất 5, Tân Thới Nhất, Quận 12, TP.HCM");
     }
     const checkNavbar = () => {
         setNavbar(!navbar)
@@ -173,7 +170,6 @@ const Page = () => {
                 </div>
             )
             }
-            <ToastContainer/>
         </div>
     );
 };

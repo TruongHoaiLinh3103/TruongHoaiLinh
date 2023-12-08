@@ -3,7 +3,7 @@
 import { useEffect } from 'react';
 import { useState } from 'react';
 const FetchLoading = () => {
-    const [looding, setloading] = useState(3);
+    const [looding, setloading] = useState(2);
     const [check, setCheck] = useState(true)
     useEffect(() => {
         if(looding === 0){
