@@ -11,16 +11,18 @@ import { READSTORY } from '../../story/READSTORY';
 import { GAME } from '../../story/GAME';
 import { FOOD } from '../../story/FOOD';
 import { HOBBY } from '../../story/HOBBY';
-import { FaSearch } from "react-icons/fa";
+import { FaKey  } from "react-icons/fa";
 import { FaBackward, FaAddressCard, FaBible , FaFileContract } from "react-icons/fa";
 
 const Page = () => {
     const {check} = FetchLoading();
+    const [modal, setModal] = useState(false);
     FetchAOS();
     const [number, setNumber] = useState(1);
     const router = useRouter();
     const [pass, setPass] = useState("");
     const [open, setOpen] = useState(false);
+    const [id, setID] = useState(0)
     const numberOne = () => {
         setNumber(1)
     }
@@ -32,6 +34,14 @@ const Page = () => {
     }
     const numberFour = () => {
         setNumber(4)
+    }
+    const openModal = (item) => {
+        setID(item.id)
+        setModal(true);
+    }
+    const closeModal = () => {
+        setID(0)
+        setModal(false);
     }
     return (
         <div className="Blog">
@@ -63,152 +73,114 @@ const Page = () => {
                 <div>
                     <div className="conteudo__geral">
                         <div className="elemento__fotos elemento__1" onClick={() => numberOne()}>
+                            <Typewriter
+                                cursor
+                                loop
+                                cursorStyle= "|"
+                                cursorColor='black'
+                                typeSpeed={70}
+                                deleteSpeed={50}
+                                delaySpeed={1000}
+                                words={["Comic"]}
+                            />
                         </div>
                         <div className="elemento__fotos elemento__2" onClick={() => numberTwo()}>
+                            <Typewriter
+                                cursor
+                                loop
+                                cursorStyle= "|"
+                                cursorColor='black'
+                                typeSpeed={70}
+                                deleteSpeed={50}
+                                delaySpeed={1000}
+                                words={["Game"]}
+                            />
                         </div>
                         <div className="elemento__fotos elemento__3">
                             <div className="titulo__inicial">Hover Me!</div>
                         </div>
                         <div className="elemento__fotos elemento__4" onClick={() => numberThree()}>
+                            <Typewriter
+                                cursor
+                                loop
+                                cursorStyle= "|"
+                                cursorColor='black'
+                                typeSpeed={70}
+                                deleteSpeed={50}
+                                delaySpeed={1000}
+                                words={["Cooking"]}
+                            />
                         </div>
                         <div className="elemento__fotos elemento__5" onClick={() => numberFour()}>
+                            <Typewriter
+                                cursor
+                                loop
+                                cursorStyle= "|"
+                                cursorColor='black'
+                                typeSpeed={70}
+                                deleteSpeed={50}
+                                delaySpeed={1000}
+                                words={["Calligraphy"]}
+                            />
                         </div>
                     </div>
                 </div>
                 <div className='Box-message'>
                     {number === 1 &&
-                    <div className='Box-message-item'>
-                        <h3 data-aos="fade-up">Truyện</h3>
-                        <p data-aos="fade-up"><Typewriter
-                            cursor
-                            loop
-                            cursorStyle= "|"
-                            cursorColor='black'
-                            typeSpeed={70}
-                            deleteSpeed={50}
-                            delaySpeed={1000}
-                            words={["Vạn tra triêu hoàng", 
-                            "Thám tử lừng danh Conan", 
-                            "Đại quản gia là ma hoàng", 
-                            "Cổ chân nhân", 
-                            "Người đưa thư vô hạn​", 
-                            "Lưỡng bất nghi", 
-                            "Dị thế tà quân", 
-                            "Đường dần tại dị giới", 
-                            "Bao Thanh Thiên", 
-                            "Ta là tà đế", 
-                            "Chàng rể mạnh nhất lịch sử", 
-                            "Tâm ma", 
-                            "Chuyển sinh vào thế giới võ lâm", 
-                            "Trở Thành Thần Chủ Cthulhu",
-                            "Yêu Thần Ký", 
-                            "Đạo Quân", 
-                            "Tung tiền hữu tọa Linh kiếm sơn", 
-                            "Ta làm kiêu hùng tại dị giới", 
-                            "Độc bộ thiên hạ", 
-                            "Hoạn phi thiên hạ", 
-                            "Vạn giới tiên tung", 
-                            "Bậc thầy thiết kế điền trang",
-                            "Đào mộ bút ký",
-                            "Ma thổi đèn", 
-                            "Tử thần Phiêu Nguyệt", 
-                            "Ảo thuật", 
-                            "Hoạn thư", 
-                            "Content marketing", 
-                            "Âm nhạc chữa lành", 
-                            "Truyện ngắn"]}
-                        /></p>
-                        <div className='Box-item_img' data-aos="fade-up">
-                            {READSTORY.map((item) => {
-                                return(
-                                    <div key={item.id} className='Box-item_img-cover'>
-                                        <img src={item.img} alt='' />
-                                    </div>
-                                )
-                            })}
-                        </div>
+                    <div className='Box-message-item' data-aos="fade-up">
+                        {READSTORY.map((item) => {
+                            return(
+                                <div key={item.id} className='Box-item_img-cover'>
+                                    <img src={item.img} alt={item.name} onClick={() => openModal(item)}/>
+                                </div>
+                            )
+                        })}
                     </div>}
                     {number === 2 &&
-                    <div className='Box-message-item'>
-                        <h3 data-aos="fade-up">Trò chơi</h3>
-                        <p data-aos="fade-up"><Typewriter
-                            cursor
-                            loop
-                            cursorStyle= "|"
-                            cursorColor='black'
-                            typeSpeed={70}
-                            deleteSpeed={50}
-                            delaySpeed={1000}
-                            words={["Liên quân"]}
-                        /></p>
-                        <div className='Box-item_img' data-aos="fade-up">
-                            {GAME.map((item) => {
-                                return(
-                                    <div key={item.id} className='Box-item_img-cover'>
-                                        <img src={item.img} alt='' />
-                                    </div>
-                                )
-                            })}
-                        </div>
+                    <div className='Box-message-item' data-aos="fade-up">
+                        {GAME.map((item) => {
+                            return(
+                                <div key={item.id} className='Box-item_img-cover'>
+                                    <img src={item.img} alt={item.name} onClick={() => openModal(item)}/>
+                                </div>
+                            )
+                        })}
                     </div>}
                     {number === 3 &&
-                    <div className='Box-message-item'>
-                        <div style={{display: !open ? "flex" : "none", alignItems: "center"}}>
-                            <input type='password' onChange={(e) => {setPass(e.target.value)}} 
-                            value={pass} placeholder='Password (ADMIN)' 
-                            style={{padding: "5px", borderTopLeftRadius: "10px", borderBottomLeftRadius: "10px"}}/>
-                            <button 
-                            style={{padding: "5px", backgroundColor:"black", color: "white", border: "1px solid white", borderTopRightRadius: "10px", borderBottomRightRadius: "10px"}} 
-                            onClick={() => {pass==="Ahkoeptr3103?" ? setOpen(true): alert("Muốn biết à :)), Đừng nghĩ nhiểu!")}}>
-                            <FaSearch /></button>
-                        </div>
-                        {open && 
-                            <>
-                                <h3 data-aos="fade-up">Món ăn</h3>
-                                <p data-aos="fade-up"><Typewriter
-                                    cursor
-                                    loop
-                                    cursorStyle= "|"
-                                    cursorColor='black'
-                                    typeSpeed={70}
-                                    deleteSpeed={50}
-                                    delaySpeed={1000}
-                                    words={["Kịch độc"," Thức uống tự nhiên", "Thức ăn nướng", "Thức ăn gỏi, xào", "Thức ăn hấp"]}
-                                /></p>
-                                <div className='Box-item_img' data-aos="fade-up">
+                        <>
+                            <div className='Box-message-input' style={{display: !open ? "flex" : "none"}} data-aos="fade-up">
+                                <div style={{display: "flex", alignItems: "center", flexDirection: "column"}}>
+                                    <input type='password' onChange={(e) => {setPass(e.target.value)}} 
+                                    value={pass} placeholder='Password (ADMIN)' 
+                                    style={{padding: "10px", border: "3px solid black", fontSize: "15px"}}/>
+                                    <button 
+                                    style={{padding: "10px", backgroundColor:"black", color: "white", border: "3px solid white", fontSize: "15px", marginTop: "20px"}} 
+                                    onClick={() => {pass==="Ahkoeptr3103?" ? setOpen(true): alert("Muốn biết à :)), Đừng nghĩ nhiểu!")}}>
+                                    <FaKey  /></button>
+                                </div>
+                            </div>
+                            {open && 
+                                <div className='Box-message-item' data-aos="fade-up">
                                     {FOOD.map((item) => {
                                         return(
                                             <div key={item.id} className='Box-item_img-cover'>
-                                                <img src={item.img} alt='' />
+                                                <img src={item.img} alt={item.name} onClick={() => openModal(item)}/>
                                             </div>
                                         )
                                     })}
                                 </div>
-                            </>
-                        }
-                    </div>}
+                            }
+                        </>
+                    }
                     {number === 4 &&
-                    <div className='Box-message-item'>
-                        <h3 data-aos="fade-up">Đặc biệt</h3>
-                        <p data-aos="fade-up"><Typewriter
-                            cursor
-                            loop
-                            cursorStyle= "|"
-                            cursorColor='black'
-                            typeSpeed={70}
-                            deleteSpeed={50}
-                            delaySpeed={1000}
-                            words={["Thư pháp"]}
-                        /></p>
-                        <div className='Box-item_img' data-aos="fade-up">
-                            {HOBBY.map((item) => {
-                                return(
-                                    <div key={item.id} className='Box-item_img-cover'>
-                                        <img src={item.img} alt='' />
-                                    </div>
-                                )
-                            })}
-                        </div>
+                    <div className='Box-message-item' data-aos="fade-up">
+                        {HOBBY.map((item) => {
+                            return(
+                                <div key={item.id} className='Box-item_img-cover'>
+                                    <img src={item.img} alt='Calligraphy' onClick={() => openModal(item)}/>
+                                </div>
+                            )
+                        })}
                     </div>}
                 </div>
                 <ul style={{margin: "20px 20px 0px"}}>
@@ -217,6 +189,84 @@ const Page = () => {
                     <li title='Project' onClick={() => {router.push("/project")}}><FaBible /></li>
                     <li title='Contact' onClick={() => {router.push("/contact")}}><FaFileContract /></li>
                 </ul>
+                <div className='modal' style={{display: modal ? "flex" : "none"}}>
+                    {number === 1 &&
+                    <div className='box'>
+                        {READSTORY.map((item) => {
+                            return(
+                                id === item.id &&
+                                <form key={item.id}>
+                                    <div>
+                                        <img src={item.img} alt={item.name} />
+                                    </div>
+                                    <div>
+                                        <input type='text' defaultValue={item.name}/>
+                                    </div>
+                                </form>
+                            )
+                        })}
+                        <div className='btn-form'>
+                            <button onClick={() => closeModal()}>Close</button>
+                        </div>
+                    </div>}
+                    {number === 2 &&
+                    <div className='box'>
+                        {GAME.map((item) => {
+                            return(
+                                id === item.id &&
+                                <form key={item.id}>
+                                    <div>
+                                        <img src={item.img} alt={item.name} />
+                                    </div>
+                                    <div>
+                                        <input type='text' defaultValue={item.name}/>
+                                    </div>
+                                </form>
+                            )
+                        })}
+                        <div className='btn-form'>
+                            <button onClick={() => closeModal()}>Close</button>
+                        </div>
+                    </div>}
+                    {number === 3 &&
+                    <div className='box'>
+                        {FOOD.map((item) => {
+                            return(
+                                id === item.id &&
+                                <form key={item.id}>
+                                    <div>
+                                        <img src={item.img} alt={item.name} />
+                                    </div>
+                                    <div>
+                                        <input type='text' defaultValue={item.name}/>
+                                    </div>
+                                </form>
+                            )
+                        })}
+                        <div className='btn-form'>
+                            <button onClick={() => closeModal()}>Close</button>
+                        </div>
+                    </div>}
+                    {number === 4 &&
+                    <div className='box'>
+                        {HOBBY.map((item) => {
+                            return(
+                                id === item.id &&
+                                <form key={item.id}>
+                                    <div>
+                                        <img src={item.img} alt={item.name} />
+                                    </div>
+                                    <div>
+                                        <input type='text' defaultValue={item.name}/>
+                                    </div>
+                                </form>
+                            )
+                        })}
+                        <div className='btn-form'>
+                            <button onClick={() => closeModal()}>Close</button>
+                        </div>
+                    </div>}
+                </div>
             </div>
             )
             }

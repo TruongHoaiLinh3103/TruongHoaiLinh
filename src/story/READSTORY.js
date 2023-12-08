@@ -248,55 +248,5 @@ export const READSTORY = [
         id: 50,
         img: "",
         name: "",
-    },
-    {
-        id: 51,
-        img: "",
-        name: "",
-    },
-    {
-        id: 52,
-        img: "",
-        name: "",
-    },
-    {
-        id: 53,
-        img: "",
-        name: "",
-    },
-    {
-        id: 54,
-        img: "",
-        name: "",
-    },
-    {
-        id: 55,
-        img: "",
-        name: "",
-    },
-    {
-        id: 56,
-        img: "",
-        name: "",
-    },
-    {
-        id: 57,
-        img: "",
-        name: "",
-    },
-    {
-        id: 58,
-        img: "",
-        name: "",
-    },
-    {
-        id: 59,
-        img: "",
-        name: "",
-    },
-    {
-        id: 60,
-        img: "",
-        name: "",
-    },
+    }
 ]

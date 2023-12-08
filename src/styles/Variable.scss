@@ -35,3 +35,14 @@
     animation: sTransition 10s linear infinite;
     font-size: 30px;
 }
+
+@mixin button($bgColor: red){
+    margin-top: 10px;
+    width: 100px;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: $bgColor;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
