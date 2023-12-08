@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 import { useState } from 'react';
-const useFetchLoading = () => {
+const FetchLoading = () => {
     const [looding, setloading] = useState(3);
     const [check, setCheck] = useState(true)
     useEffect(() => {
@@ -21,4 +21,4 @@ const useFetchLoading = () => {
     return { looding, check };
 };
 
-export default useFetchLoading;
+export default FetchLoading;

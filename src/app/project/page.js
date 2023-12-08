@@ -6,11 +6,11 @@ import "../../styles/Project.scss";
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import useFetchAOS from "../../utils/useFetchAOS";
+import FetchAOS from "../../utils/FetchAOS";
 import { FaBackward, FaBlogger, FaAddressCard, FaFileContract } from "react-icons/fa";
 
-const page = () => {
-    useFetchAOS();
+const Page = () => {
+    FetchAOS();
     const [conteudoGeral, setConteudoGeral] = useState("js-conteudo-geral");
     const router = useRouter();
     const conteudoEmArray = (item) => {
@@ -130,4 +130,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Page;

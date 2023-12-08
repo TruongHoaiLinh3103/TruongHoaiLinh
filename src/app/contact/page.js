@@ -2,8 +2,8 @@
 
 import React from 'react';
 import "../../styles/Contact.scss";
-import useFetchLoading from '../../utils/useFetchLoading';
-import useFetchAOS from '../../utils/useFetchAOS';
+import FetchLoading from '../../utils/FetchLoading';
+import FetchAOS from '../../utils/FetchAOS';
 import { useRouter } from 'next/navigation';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -12,9 +12,9 @@ import { useState } from 'react';
 import { QR } from '../../story/QR';
 import { FaQrcode, FaBlogger, FaAddressCard, FaBible, FaPinterest, FaPhone, FaEnvelope, FaFacebook, FaInstagram, FaTiktok, FaGit } from "react-icons/fa";
 
-const page = () => {
+const Page = () => {
     const router = useRouter();
-    const {check} = useFetchLoading();
+    const {check} = FetchLoading();
     const [zalo, setZalo] = useState(false);
     const [vietinbank, setVietinbank] = useState(false);
     const [email, setEmail] = useState(false);
@@ -25,7 +25,7 @@ const page = () => {
     const [instagram, setInstagram] = useState(false);
     const [pin, setPin] = useState(false);
     const [navbar, setNavbar] = useState(false)
-    useFetchAOS();
+    FetchAOS();
     const alerAdress = () => {
         toast("12/9 Tân Thới Nhất 5, Tân Thới Nhất, Quận 12, TP.HCM");
     }
@@ -178,4 +178,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Page;

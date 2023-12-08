@@ -4,14 +4,14 @@ import React from 'react';
 import "../../styles/Home.scss";
 import "../../styles/Grid.css";
 import { Typewriter } from 'react-simple-typewriter';
-import useFetchAOS from "../../utils/useFetchAOS";
+import FetchAOS from "../../utils/FetchAOS";
 import { DOCUMENT } from '../../story/DOCUMENT';
 import THL from "../../../public/bc269ba43638e066b929.jpg";
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaBackward, FaFacebook, FaGithub, FaEnvelope } from "react-icons/fa";
 
-const page = () => {
+const Page = () => {
     const gettingStarted = (e) => {
         const x = e.pageX - e.target.offsetLeft
         const y = e.pageY - e.target.offsetTop
@@ -19,7 +19,7 @@ const page = () => {
         e.target.style.setProperty('--x', `${x}px`)
         e.target.style.setProperty('--y', `${y}px`)
     }
-    useFetchAOS();
+    FetchAOS();
     return (
         <div className='Home'>
             <nav className='Home-navbar' data-aos="fade-up">
@@ -69,4 +69,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Page;

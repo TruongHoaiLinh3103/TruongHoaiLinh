@@ -2,8 +2,8 @@
 
 import React from 'react';
 import '../../styles/Blog.css';
-import useFetchLoading from "../../utils/useFetchLoading";
-import useFetchAOS from "../../utils/useFetchAOS";
+import FetchLoading from "../../utils/FetchLoading";
+import FetchAOS from "../../utils/FetchAOS";
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { Typewriter } from 'react-simple-typewriter';
@@ -13,9 +13,9 @@ import { FOOD } from '../../story/FOOD';
 import { HOBBY } from '../../story/HOBBY';
 import { FaSearch } from "react-icons/fa";
 
-const page = () => {
-    const {check} = useFetchLoading();
-    useFetchAOS();
+const Page = () => {
+    const {check} = FetchLoading();
+    FetchAOS();
     const [number, setNumber] = useState(1);
     const history = useRouter();
     const [pass, setPass] = useState("");
@@ -229,4 +229,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Page;

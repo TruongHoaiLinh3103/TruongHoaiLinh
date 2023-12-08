@@ -2,16 +2,16 @@
 
 import React from 'react';
 import "../../styles/About.scss";
-import useFetchLoading from '../../utils/useFetchLoading';
-import useFetchAOS from '../../utils/useFetchAOS';
+import FetchLoading from '../../utils/FetchLoading';
+import FetchAOS from '../../utils/FetchAOS';
 import { useRouter } from 'next/navigation';
 import "../../styles/Blog.css";
 import { DOCUMENT } from '../../story/DOCUMENT';
 import { FaBackward, FaBlogger, FaBible , FaFileContract, FaDownload } from "react-icons/fa";
 
-const page = () => {
-    const {check} = useFetchLoading();
-    useFetchAOS();
+const Page = () => {
+    const {check} = FetchLoading();
+    FetchAOS();
     const router = useRouter();
     console.log(DOCUMENT)
     return (
@@ -82,4 +82,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Page;
