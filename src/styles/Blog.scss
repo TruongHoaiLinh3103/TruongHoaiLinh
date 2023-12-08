@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Dancing+Script&family=Roboto:wght@300;400;500;700;900&display=swap');
+@import "./Variable.scss";
 
 .Blog {
   display: flex;
@@ -155,24 +156,7 @@
 		linear-gradient(hsla(0,0%,55%,0) 46.9%,hsl(0,0%,65%) 47% 52.9%,hsla(0,0%,65%,0) 53%) 50% 50% / 99% 99% no-repeat;
 }
 h3.title-loading{
-  margin: 10px 20px;
-  text-align: center;
-  font-family: 'Dancing Script', cursive;
-  color: rgba(255, 255, 255, .1);
-  background: linear-gradient(to right,
-          rgb(245, 0, 0),
-          rgb(255, 128, 0),
-          rgb(255, 204, 0),
-          rgb(111, 255, 0),
-          rgb(2, 241, 253),
-          rgb(10, 6, 239),
-          rgb(173, 10, 227),
-          rgb(0, 0, 0));
-  background-size: 400%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  animation: sTransition 10s linear infinite;
-  font-size: 30px;
+  @extend %loading;
 }
 /* Animations */
 @keyframes hamster {
@@ -299,12 +283,11 @@ h3.title-loading{
   width: 95%;
 }
 .Box-message{
-  margin-top: 60px;
+  margin-top: 20px;
   width: 98%;
   height: 300px;
   border: 3px outset transparent;
   background-color: #fff2;
-  /* background-color: white; */
   box-shadow: 2px 4px 5px 0px rgba(255, 255, 255, 0.92);
   overflow-y: auto;
 }
@@ -383,8 +366,8 @@ h3.title-loading{
   flex-wrap: wrap;
 }
 .Box-item_img-cover{
-  width: 200px;
-  height: 300px;
+  width: 100px;
+  height: 130px;
   overflow: hidden;
 }
 .Box-item_img-cover img{
@@ -396,6 +379,19 @@ h3.title-loading{
 .Box-item_img-cover img:hover{
   transform: scale(1.3);
 }
+.Box ul{
+  @extend %ulBtn;
+  li{
+    @extend %liBtn;
+    +li{
+      @extend %liNextBtn;
+    }
+    svg{
+      @extend %iconBtn;
+    }
+  }
+}
+
 
 .conteudo__geral {
   display: flex;

@@ -1,3 +1,5 @@
+@import "./Variable.scss";
+
 .Contact{
   display: flex;
   align-items: center;
@@ -214,6 +216,9 @@
     100% {
       transform: translateX(-10px);
     }
+  }
+  h3.title-loading{
+    @extend %loading;
   }
 
   /* Card Styles */

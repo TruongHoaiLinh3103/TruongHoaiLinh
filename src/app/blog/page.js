@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import '../../styles/Blog.css';
+import '../../styles/Blog.scss';
 import FetchLoading from "../../utils/FetchLoading";
 import FetchAOS from "../../utils/FetchAOS";
 import { useState } from 'react';
@@ -12,12 +12,13 @@ import { GAME } from '../../story/GAME';
 import { FOOD } from '../../story/FOOD';
 import { HOBBY } from '../../story/HOBBY';
 import { FaSearch } from "react-icons/fa";
+import { FaBackward, FaAddressCard, FaBible , FaFileContract } from "react-icons/fa";
 
 const Page = () => {
     const {check} = FetchLoading();
     FetchAOS();
     const [number, setNumber] = useState(1);
-    const history = useRouter();
+    const router = useRouter();
     const [pass, setPass] = useState("");
     const [open, setOpen] = useState(false);
     const numberOne = () => {
@@ -65,7 +66,7 @@ const Page = () => {
                         </div>
                         <div className="elemento__fotos elemento__2" onClick={() => numberTwo()}>
                         </div>
-                        <div className="elemento__fotos elemento__3" onClick={() => {history.push("/")}}>
+                        <div className="elemento__fotos elemento__3">
                             <div className="titulo__inicial">Hover Me!</div>
                         </div>
                         <div className="elemento__fotos elemento__4" onClick={() => numberThree()}>
@@ -210,6 +211,12 @@ const Page = () => {
                         </div>
                     </div>}
                 </div>
+                <ul style={{margin: "20px 20px 0px"}}>
+                    <li title='Menu' onClick={() => {router.push("/")}}><FaBackward /></li>
+                    <li title='Blog' onClick={() => {router.push("/about")}}><FaAddressCard /></li>
+                    <li title='Project' onClick={() => {router.push("/project")}}><FaBible /></li>
+                    <li title='Contact' onClick={() => {router.push("/contact")}}><FaFileContract /></li>
+                </ul>
             </div>
             )
             }

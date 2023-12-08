@@ -14,3 +14,24 @@
     box-shadow: #FC0 1px 0 10px;
     border-radius: 100vh;
 }
+
+%loading{
+    margin: 10px 20px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    color: rgba(255, 255, 255, .1);
+    background: linear-gradient(to right,
+            rgb(245, 0, 0),
+            rgb(255, 128, 0),
+            rgb(255, 204, 0),
+            rgb(111, 255, 0),
+            rgb(2, 241, 253),
+            rgb(10, 6, 239),
+            rgb(173, 10, 227),
+            rgb(0, 0, 0));
+    background-size: 400%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: sTransition 10s linear infinite;
+    font-size: 30px;
+}
