@@ -88,7 +88,7 @@ const Page = () => {
                                                                     <h4>Code:</h4>
                                                                     <a href={project.soundCode}><p>{project.soundCode}</p></a>
                                                                 </div>
-                                                                <p><b><i style={{color: "red"}}>Note: You should change the file name from (Namefile)-WP to Namefile if you don't want to encounter errors</i></b></p>
+                                                                <p><b><i style={{color: "red"}}>Note: You should change the file name from (Namefile)-WP to Namefile if you don&lsquo;t want to encounter errors</i></b></p>
                                                                 <div>
                                                                     <h4>Database:</h4>
                                                                     <a href={project.link} download={project.nameDatabase}><p>{project.nameDatabase}</p></a>
