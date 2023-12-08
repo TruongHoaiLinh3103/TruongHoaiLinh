@@ -151,28 +151,28 @@ export const GAME = [
     },
     {
         id: 31,
-        img: "",
-        name: ""
+        img: "https://i.pinimg.com/originals/a9/93/c9/a993c9defcc737a6ff947f7bdc604c5b.jpg",
+        name: "krixi"
     },
     {
         id: 32,
-        img: "",
-        name: ""
+        img: "https://i.pinimg.com/originals/5f/1e/ca/5f1ecab39e116ee78b1b9c7154f3a057.jpg",
+        name: "Aya"
     },
     {
         id: 33,
-        img: "",
-        name: ""
+        img: "https://i.pinimg.com/originals/03/9c/d2/039cd2c11a7fdedb2ee2b02e3abcb37a.jpg",
+        name: "Qi"
     },
     {
         id: 34,
-        img: "",
-        name: ""
+        img: "https://i.pinimg.com/originals/c1/11/82/c111823f0b91d46ec6a466870d60868c.jpg",
+        name: "Natalya"
     },
     {
         id: 35,
-        img: "",
-        name: ""
+        img: "https://i.pinimg.com/originals/5d/d6/9c/5dd69ca7c8f9e80da4d3a2419e940cb7.jpg",
+        name: "Aoi"
     },
     {
         id: 36,
@@ -186,67 +186,67 @@ export const GAME = [
     },
     {
         id: 38,
-        img: "",
-        name: ""
+        img: "https://i.pinimg.com/originals/42/98/d3/4298d3afcf5e6e3d8f7a71325cea3688.jpg",
+        name: "Shephera"
     },
     {
         id: 39,
-        img: "",
-        name: ""
+        img: "https://i.pinimg.com/originals/66/d6/2f/66d62fd51949292ea8cd9b32d74494fb.jpg",
+        name: "Sinestrea"
     },
     {
         id: 40,
-        img: "",
-        name: ""
+        img: "https://i.pinimg.com/originals/c5/aa/14/c5aa14e269839065ee4f3ca4fe73ad05.jpg",
+        name: "Volkath"
     },
     {
         id: 41,
-        img: "",
-        name: ""
+        img: "https://i.pinimg.com/originals/f4/93/dc/f493dc177572f61bbcf03021a1efbd82.jpg",
+        name: "Airi"
     },
     {
         id: 42,
-        img: "",
-        name: ""
+        img: "https://i.pinimg.com/originals/9f/6e/a7/9f6ea75698529510fb3ea13718f1ccba.jpg",
+        name: "Tel'Annas"
     },
     {
         id: 43,
-        img: "",
-        name: ""
+        img: "https://i.pinimg.com/originals/8a/e6/cf/8ae6cfecfa90afd548556f1ec7700366.jpg",
+        name: "Grakk"
     },
     {
         id: 44,
-        img: "",
-        name: ""
+        img: "https://i.pinimg.com/736x/ce/93/7b/ce937bda611de50dc8756824d0d2e4b6.jpg",
+        name: "Gildur"
     },
     {
         id: 45,
-        img: "",
-        name: ""
+        img: "https://i.pinimg.com/originals/90/40/ce/9040cea0845911763880644bbb667b3b.jpg",
+        name: "Allain"
     },
     {
         id: 46,
-        img: "",
-        name: ""
+        img: "https://i.pinimg.com/originals/5b/c0/ca/5bc0caaad3a09c41f01524cfc10fc92e.jpg",
+        name: "Elsu"
     },
     {
         id: 47,
-        img: "",
-        name: ""
+        img: "https://i.pinimg.com/originals/7a/61/ba/7a61bad3d806e1e79d8e582af5477907.jpg",
+        name: "Gusion"
     },
     {
         id: 48,
-        img: "",
-        name: ""
+        img: "https://i.pinimg.com/originals/70/55/f8/7055f8aa35dea683cf91c1a277b33446.jpg",
+        name: "Aamon"
     },
     {
         id: 49,
-        img: "",
-        name: ""
+        img: "https://i.pinimg.com/originals/36/aa/94/36aa94873519906bf2d8f6884bec0049.jpg",
+        name: "Godiant"
     },
     {
         id: 50,
-        img: "",
-        name: ""
+        img: "https://i.pinimg.com/originals/20/7a/84/207a84fce67d1b748db174054e9bf6a4.jpg",
+        name: "Card"
     }
 ]
