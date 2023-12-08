@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import "../../Styles/About.scss";
+import "../../styles/About.scss";
 import useFetchLoading from '../../utils/useFetchLoading';
 import useFetchAOS from '../../utils/useFetchAOS';
 import { useRouter } from 'next/navigation';
