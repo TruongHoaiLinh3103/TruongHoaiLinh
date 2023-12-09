@@ -15,11 +15,6 @@ export const FOOD = [
         name: "Nước"
     },
     {
-        id: 4,
-        img: "https://i.pinimg.com/originals/0e/ad/69/0ead69d0bcd0e46c337ee0cdc7456b00.jpg",
-        name: "Gỏi"
-    },
-    {
         id: 5,
         img: "https://i.pinimg.com/originals/ea/32/ae/ea32ae47f438b340b734efb09aed0384.jpg",
         name: "Hấp"

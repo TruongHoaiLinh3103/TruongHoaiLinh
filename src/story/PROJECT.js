@@ -15,14 +15,14 @@ export const PROJECT = [
                 idProject: 1,
                 nameProject: "ETC",
                 soundCode: "https://github.com/TruongHoaiLinh3103/etc",
-                deploy: "https://etc2023-8e1aa.firebaseapp.com",
+                deploy: "https://etc-31032003.web.app",
                 img: etcImg
             },
             {
                 idProject: 2,
                 nameProject: "Kensho",
                 soundCode: "https://github.com/TruongHoaiLinh3103/kensho",
-                deploy: "https://kensho2023-e7ac3.web.app/",
+                deploy: "https://kensho-31032003.web.app",
                 img: kenshoImg
             },
             {

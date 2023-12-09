@@ -61,7 +61,7 @@ export const GAME = [
     },
     {
         id: 13,
-        img: "https://i.pinimg.com/originals/77/35/1d/77351dc6143efe19101cd7421045646d.jpg",
+        img: "https://i.pinimg.com/originals/2e/99/b2/2e99b2ef4223385f747123f1ea2699f1.jpg",
         name: "Triệu Vân"
     },
     {
@@ -146,12 +146,12 @@ export const GAME = [
     },
     {
         id: 30,
-        img: "https://i.pinimg.com/originals/62/b9/1c/62b91c99aab35113e4c5e6b4187d0d3c.jpg",
+        img: "https://i.pinimg.com/originals/7b/54/63/7b5463244f2c0294fccb2d61a26d2b34.jpg",
         name: "Violet"
     },
     {
         id: 31,
-        img: "https://i.pinimg.com/originals/a9/93/c9/a993c9defcc737a6ff947f7bdc604c5b.jpg",
+        img: "https://i.pinimg.com/originals/1a/f6/0f/1af60f11b2c48d60896907ec15e9ea44.jpg",
         name: "krixi"
     },
     {
@@ -176,13 +176,13 @@ export const GAME = [
     },
     {
         id: 36,
-        img: "",
-        name: ""
+        img: "https://i.pinimg.com/originals/61/27/ec/6127ec3133045b3c385add81e48c2ca1.jpg",
+        name: "Skud"
     },
     {
         id: 37,
-        img: "",
-        name: ""
+        img: "https://i.pinimg.com/originals/08/74/07/087407d8b41d5f34ae92bf003db94dde.jpg",
+        name: "Edith"
     },
     {
         id: 38,
@@ -191,7 +191,7 @@ export const GAME = [
     },
     {
         id: 39,
-        img: "https://i.pinimg.com/originals/66/d6/2f/66d62fd51949292ea8cd9b32d74494fb.jpg",
+        img: "https://i.pinimg.com/originals/62/c7/75/62c775c90e47fef7dcb7bdc99c1db4d4.jpg",
         name: "Sinestrea"
     },
     {
@@ -231,8 +231,8 @@ export const GAME = [
     },
     {
         id: 47,
-        img: "https://i.pinimg.com/originals/7a/61/ba/7a61bad3d806e1e79d8e582af5477907.jpg",
-        name: "Gusion"
+        img: "https://i.pinimg.com/originals/58/71/00/5871005064e3d845f33287f31ab0a36b.jpg",
+        name: "Ling"
     },
     {
         id: 48,
