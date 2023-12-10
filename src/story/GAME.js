@@ -146,7 +146,7 @@ export const GAME = [
     },
     {
         id: 30,
-        img: "https://i.pinimg.com/originals/7b/54/63/7b5463244f2c0294fccb2d61a26d2b34.jpg",
+        img: "https://i.pinimg.com/originals/22/44/23/224423aff67ca6340747e11d34bfddb0.jpg",
         name: "Violet"
     },
     {
@@ -231,12 +231,12 @@ export const GAME = [
     },
     {
         id: 47,
-        img: "https://i.pinimg.com/originals/58/71/00/5871005064e3d845f33287f31ab0a36b.jpg",
-        name: "Ling"
+        img: "https://i.pinimg.com/originals/db/74/fe/db74fe04e355bb27d211ce298c81817d.jpg",
+        name: "Cresht "
     },
     {
         id: 48,
-        img: "https://i.pinimg.com/originals/70/55/f8/7055f8aa35dea683cf91c1a277b33446.jpg",
+        img: "https://i.pinimg.com/originals/3f/25/85/3f25850b1e6a893d215b7523d94083da.jpg",
         name: "Aamon"
     },
     {
