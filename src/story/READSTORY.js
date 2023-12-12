@@ -121,28 +121,28 @@ export const READSTORY = [
     },
     {
         id: 25,
-        img: "https://i.pinimg.com/originals/64/fb/8f/64fb8f3950d38f3ce1f384bfe33950ea.png",
+        img: "https://i.pinimg.com/originals/57/47/20/57472011d268a0a4839760f54cff80b1.jpg",
         name: "Tử thần Phiêu Nguyệt",
     },
     {
         id: 26,
-        img: "",
-        name: "",
+        img: "https://i.pinimg.com/originals/d5/ef/c4/d5efc4a9fc9536ea3d450cffdbe7aa5a.jpg",
+        name: "Mệnh danh thuật của bóng tối",
     },
     {
         id: 27,
-        img: "",
-        name: "",
+        img: "https://i.pinimg.com/originals/7c/bf/1c/7cbf1cc01c1396a5976d2b8965eb14f3.jpg",
+        name: "Ta quét phó bản ở khắp thế giới",
     },
     {
         id: 28,
-        img: "https://www.walibu.com/Upload/Blog/49473cb2-f573-4a7c-aadc-5d6fbd5cc860.jpg",
-        name: "Content marketing",
+        img: "https://i.pinimg.com/originals/77/e9/9b/77e99b130a32282af9d2b8a96868b7a4.jpg",
+        name: "Tây di",
     },
     {
         id: 29,
-        img: "https://i.pinimg.com/originals/1d/71/a3/1d71a32ae77cd2e4e6e6bca8570c683e.jpg",
-        name: "Hoạn thư",
+        img: "",
+        name: "",
     },
     {
         id: 30,
@@ -191,62 +191,12 @@ export const READSTORY = [
     },
     {
         id: 39,
-        img: "",
-        name: "",
+        img: "https://i.pinimg.com/originals/1d/71/a3/1d71a32ae77cd2e4e6e6bca8570c683e.jpg",
+        name: "Hoạn thư",
     },
     {
         id: 40,
-        img: "",
-        name: "",
-    },
-    {
-        id: 41,
-        img: "",
-        name: "",
-    },
-    {
-        id: 42,
-        img: "",
-        name: "",
-    },
-    {
-        id: 43,
-        img: "",
-        name: "",
-    },
-    {
-        id: 44,
-        img: "",
-        name: "",
-    },
-    {
-        id: 45,
-        img: "",
-        name: "",
-    },
-    {
-        id: 46,
-        img: "",
-        name: "",
-    },
-    {
-        id: 47,
-        img: "",
-        name: "",
-    },
-    {
-        id: 48,
-        img: "",
-        name: "",
-    },
-    {
-        id: 49,
-        img: "",
-        name: "",
-    },
-    {
-        id: 50,
-        img: "",
-        name: "",
+        img: "https://www.walibu.com/Upload/Blog/49473cb2-f573-4a7c-aadc-5d6fbd5cc860.jpg",
+        name: "Content marketing",
     }
 ]

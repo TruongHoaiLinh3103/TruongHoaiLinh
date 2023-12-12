@@ -12,7 +12,6 @@ const Page = () => {
     const {check} = FetchLoading();
     FetchAOS();
     const router = useRouter();
-    console.log(DOCUMENT)
     return (
         <div className='About'>
             {check ?
