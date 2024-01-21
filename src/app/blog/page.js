@@ -7,12 +7,13 @@ import FetchAOS from "../../utils/FetchAOS";
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { Typewriter } from 'react-simple-typewriter';
-import { READSTORY } from '../../story/READSTORY';
+import { WEBSITE } from '../../story/WEBSITE';
 import { GAME } from '../../story/GAME';
 import { FOOD } from '../../story/FOOD';
 import { HOBBY } from '../../story/HOBBY';
 import { FaKey  } from "react-icons/fa";
 import { FaBackward, FaAddressCard, FaBible , FaFileContract } from "react-icons/fa";
+import DOMPurify from 'dompurify';
 
 const Page = () => {
     const {check} = FetchLoading();
@@ -42,6 +43,10 @@ const Page = () => {
     const closeModal = () => {
         setID(0)
         setModal(false);
+    }
+    const detailContent = (contents) => {
+        const htmlSanatized = DOMPurify.sanitize(contents);
+        return htmlSanatized;
     }
     return (
         <>
@@ -81,7 +86,7 @@ const Page = () => {
                                 typeSpeed={70}
                                 deleteSpeed={50}
                                 delaySpeed={1000}
-                                words={["Comic"]}
+                                words={["Website"]}
                             />
                         </div>
                         <div className="elemento__fotos elemento__2" onClick={() => numberTwo()}>
@@ -128,7 +133,7 @@ const Page = () => {
                 <div className='Box-message'>
                     {number === 1 &&
                     <div className='Box-message-item' data-aos="fade-up">
-                        {READSTORY.map((item) => {
+                        {WEBSITE.map((item) => {
                             return(
                                 <div key={item.id} className='Box-item_img-cover'>
                                     <img src={item.img} alt={item.name} onClick={() => openModal(item)}/>
@@ -192,7 +197,7 @@ const Page = () => {
                 <div className='modal' style={{display: modal ? "flex" : "none"}}>
                     {number === 1 &&
                     <div className='box'>
-                        {READSTORY.map((item) => {
+                        {WEBSITE.map((item) => {
                             return(
                                 id === item.id &&
                                 <form key={item.id}>
@@ -200,8 +205,9 @@ const Page = () => {
                                         <img src={item.img} alt={item.name} />
                                     </div>
                                     <div>
-                                        <input type='text' defaultValue={item.name}/>
+                                        <input type='text' defaultValue={item.name} disabled/>
                                     </div>
+                                    <div dangerouslySetInnerHTML={{__html: detailContent(item.text)}}></div>
                                 </form>
                             )
                         })}
@@ -219,8 +225,9 @@ const Page = () => {
                                         <img src={item.img} alt={item.name} />
                                     </div>
                                     <div>
-                                        <input type='text' defaultValue={item.name}/>
+                                        <input type='text' defaultValue={item.name} disabled/>
                                     </div>
+                                    <div dangerouslySetInnerHTML={{__html: detailContent(item.text)}}></div>
                                 </form>
                             )
                         })}
@@ -238,8 +245,9 @@ const Page = () => {
                                         <img src={item.img} alt={item.name} />
                                     </div>
                                     <div>
-                                        <input type='text' defaultValue={item.name}/>
+                                        <input type='text' defaultValue={item.name} disabled/>
                                     </div>
+                                    <div dangerouslySetInnerHTML={{__html: detailContent(item.text)}}></div>
                                 </form>
                             )
                         })}
@@ -257,8 +265,9 @@ const Page = () => {
                                         <img src={item.img} alt={item.name} />
                                     </div>
                                     <div>
-                                        <input type='text' defaultValue={item.name}/>
+                                        <input type='text' defaultValue={item.name} disabled/>
                                     </div>
+                                    <div dangerouslySetInnerHTML={{__html: detailContent(item.text)}}></div>
                                 </form>
                             )
                         })}
