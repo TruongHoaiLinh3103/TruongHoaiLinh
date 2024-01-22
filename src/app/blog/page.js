@@ -9,8 +9,6 @@ import { useRouter } from 'next/navigation';
 import { Typewriter } from 'react-simple-typewriter';
 import { WEBSITE } from '../../story/WEBSITE';
 import { GAME } from '../../story/GAME';
-import { FOOD } from '../../story/FOOD';
-import { HOBBY } from '../../story/HOBBY';
 import { FaKey  } from "react-icons/fa";
 import { FaBackward, FaAddressCard, FaBible , FaFileContract } from "react-icons/fa";
 import DOMPurify from 'dompurify';
@@ -113,7 +111,7 @@ const Page = () => {
                                 typeSpeed={70}
                                 deleteSpeed={50}
                                 delaySpeed={1000}
-                                words={["Cooking"]}
+                                words={["Card"]}
                             />
                         </div>
                         <div className="elemento__fotos elemento__5" onClick={() => numberFour()}>
@@ -125,7 +123,7 @@ const Page = () => {
                                 typeSpeed={70}
                                 deleteSpeed={50}
                                 delaySpeed={1000}
-                                words={["Calligraphy"]}
+                                words={["Block"]}
                             />
                         </div>
                     </div>
@@ -136,7 +134,7 @@ const Page = () => {
                         {WEBSITE.map((item) => {
                             return(
                                 <div key={item.id} className='Box-item_img-cover'>
-                                    <img src={item.img} alt={item.name} onClick={() => openModal(item)}/>
+                                    <img src={item.img} alt="website"/>
                                 </div>
                             )
                         })}
@@ -161,31 +159,98 @@ const Page = () => {
                                     <button 
                                     style={{padding: "10px", backgroundColor:"black", color: "white", border: "3px solid white", fontSize: "15px", marginTop: "20px"}} 
                                     onClick={() => {pass==="Ahkoeptr3103?" ? setOpen(true): alert("Muốn biết à :)), Đừng nghĩ nhiểu!")}}>
-                                    <FaKey  /></button>
+                                    <FaKey /></button>
                                 </div>
                             </div>
                             {open && 
                                 <div className='Box-message-item' data-aos="fade-up">
-                                    {FOOD.map((item) => {
-                                        return(
-                                            <div key={item.id} className='Box-item_img-cover'>
-                                                <img src={item.img} alt={item.name} onClick={() => openModal(item)}/>
-                                            </div>
-                                        )
-                                    })}
+                                    <div className='Box-item_img-cover'>
+                                        <h3>Diện</h3>
+                                        <div>
+                                            <p>Diện cầu</p>
+                                            <p>Diện lộ</p>
+                                            <p>Hạ diện nguyên</p>
+                                            <p>Thượng diện đơn</p>
+                                            <p>Diện giang sơn</p>
+                                        </div>
+                                    </div>
+                                    <div className='Box-item_img-cover'>
+                                        <h3>Ẩn</h3>
+                                        <div>
+                                            <p>Ẩn son</p>
+                                            <p>Ẩn tráo</p>
+                                            <p>Ẩn như</p>
+                                            <p>Ẩn phi hạ</p>
+                                            <p>Ẩn phi thượng</p>
+                                        </div>
+                                    </div>
+                                    <div className='Box-item_img-cover'>
+                                        <h3>Ảo</h3>
+                                        <div>
+                                            <p>Ảo danh nhị</p>
+                                            <p>Ảo danh nhất</p>
+                                            <p>Ảo phi khống</p>
+                                            <p>Ảo lưỡng nghi</p>
+                                            <p>Ảo tam chỉ</p>
+                                        </div>
+                                    </div>
+                                    <div className='Box-item_img-cover'>
+                                        <h3>Trảm</h3>
+                                        <div>
+                                            <p>Trảm danh ngũ</p>
+                                            <p>Trảm danh nhị</p>
+                                            <p>Trảm song thủ</p>
+                                            <p>Trảm thượng đơn hạ hạ</p>
+                                            <p>Trảm giả ẩn son</p>
+                                        </div>
+                                    </div>
+                                    <div className='Box-item_img-cover'>
+                                        <h3>Loạn</h3>
+                                        <div>
+                                            <p>Loạn thượng đơn</p>
+                                            <p>Loạn song thượng hạ đơn</p>
+                                            <p>Loạn phôi</p>
+                                            <p>Hóa kiếp phù du</p>
+                                            <p>Loạn như phật tiền</p>
+                                        </div>
+                                    </div>
+                                    <div className='Box-item_img-cover'>
+                                        <h3>Nhị</h3>
+                                        <div>
+                                            <p>Song tứ |///|///.../</p>
+                                            <p>Thượng ngũ tam ||///.../</p>
+                                            <p>Thượng hạ tứ tam |///.../|</p>
+                                            <p>Tam nhị tam ///||///.../</p>
+                                            <p>Hạ song tam ///.../||</p>
+                                        </div>
+                                    </div>
+                                    <div className='Box-item_img-cover'>
+                                        <h3>Tam</h3>
+                                        <div>
+                                            <p>T Nhất ngũ tam |||///.../</p>
+                                            <p>Ngũ tứ |///||///.../</p>
+                                            <p>Tứ nhất tứ ///|||///.../</p>
+                                            <p>Lục tam ||///|///.../</p>
+                                            <p>Hạ tam tam ///.../|||</p>
+                                        </div>
+                                    </div>
+                                    <div className='Box-item_img-cover'>
+                                        <h3>Thâu</h3>
+                                        <div>
+                                            <p>Thâu chi thượng</p>
+                                            <p>Thâu chi hạ</p>
+                                            <p>Thâu |/././||</p>
+                                            <p>Thâu ||/././|</p>
+                                            <p>Thâu chuẩn 369 ách 0</p>
+                                        </div>
+                                    </div>
                                 </div>
                             }
                         </>
                     }
                     {number === 4 &&
                     <div className='Box-message-item' data-aos="fade-up">
-                        {HOBBY.map((item) => {
-                            return(
-                                <div key={item.id} className='Box-item_img-cover'>
-                                    <img src={item.img} alt='Calligraphy' onClick={() => openModal(item)}/>
-                                </div>
-                            )
-                        })}
+                        <img src="https://i.pinimg.com/originals/17/c9/27/17c927f3a60bf394b8fab7afd40f5f00.png" alt="block"/>
                     </div>}
                 </div>
                 <ul style={{margin: "20px 20px 0px"}}>
@@ -195,69 +260,9 @@ const Page = () => {
                     <li title='Contact' onClick={() => {router.push("/contact")}}><FaFileContract /></li>
                 </ul>
                 <div className='modal' style={{display: modal ? "flex" : "none"}}>
-                    {number === 1 &&
-                    <div className='box'>
-                        {WEBSITE.map((item) => {
-                            return(
-                                id === item.id &&
-                                <form key={item.id}>
-                                    <div>
-                                        <img src={item.img} alt={item.name} />
-                                    </div>
-                                    <div>
-                                        <input type='text' defaultValue={item.name} disabled/>
-                                    </div>
-                                    <div dangerouslySetInnerHTML={{__html: detailContent(item.text)}}></div>
-                                </form>
-                            )
-                        })}
-                        <div className='btn-form'>
-                            <button onClick={() => closeModal()}>Close</button>
-                        </div>
-                    </div>}
                     {number === 2 &&
                     <div className='box'>
                         {GAME.map((item) => {
-                            return(
-                                id === item.id &&
-                                <form key={item.id}>
-                                    <div>
-                                        <img src={item.img} alt={item.name} />
-                                    </div>
-                                    <div>
-                                        <input type='text' defaultValue={item.name} disabled/>
-                                    </div>
-                                    <div dangerouslySetInnerHTML={{__html: detailContent(item.text)}}></div>
-                                </form>
-                            )
-                        })}
-                        <div className='btn-form'>
-                            <button onClick={() => closeModal()}>Close</button>
-                        </div>
-                    </div>}
-                    {number === 3 &&
-                    <div className='box'>
-                        {FOOD.map((item) => {
-                            return(
-                                id === item.id &&
-                                <form key={item.id}>
-                                    <div>
-                                        <img src={item.img} alt={item.name} />
-                                    </div>
-                                    <div>
-                                        <input type='text' defaultValue={item.name} disabled/>
-                                    </div>
-                                    <div dangerouslySetInnerHTML={{__html: detailContent(item.text)}}></div>
-                                </form>
-                            )
-                        })}
-                        <div className='btn-form'>
-                            <button onClick={() => closeModal()}>Close</button>
-                        </div>
-                    </div>}
-                    {number === 4 &&
-                    <div className='box'>
-                        {HOBBY.map((item) => {
                             return(
                                 id === item.id &&
                                 <form key={item.id}>

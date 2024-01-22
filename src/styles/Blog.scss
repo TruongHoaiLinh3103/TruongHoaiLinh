@@ -274,6 +274,7 @@ h3.title-loading{
   width: 1400px;
   height: 100%;
   overflow: hidden;
+  font-family: 'Times New Roman', Times, serif;
 }
 .Box-message{
   margin-top: 65px;
@@ -293,6 +294,12 @@ h3.title-loading{
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  img{
+    max-width: 700px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 .Box-message-input{
   width: 100%;
@@ -306,6 +313,16 @@ h3.title-loading{
   width: 200px;
   height: 150px;
   overflow: hidden;
+  text-align: center;
+  margin: 10px;
+  div{
+    p{
+      color: black;
+      font-size: 15px;
+      letter-spacing: 1px;
+      font-weight: bold;
+    }
+  }
 }
 .Box-item_img-cover img{
   width: 100%;
