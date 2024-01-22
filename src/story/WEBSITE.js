@@ -31,8 +31,4 @@ export const WEBSITE = [
         "id": 8,
         "img": "https://i.pinimg.com/originals/4b/62/c9/4b62c9ae3eb4221e98d4896ecea9ded2.jpg"
       },
-      {
-        "id": 9,
-        "img": "https://i.pinimg.com/originals/1b/08/74/1b087468a2374f2967da977de4b1963a.jpg"
-      }
 ]
