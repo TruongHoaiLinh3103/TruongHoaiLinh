@@ -96,7 +96,7 @@ const Page = () => {
                                 typeSpeed={70}
                                 deleteSpeed={50}
                                 delaySpeed={1000}
-                                words={["Game"]}
+                                words={["Block"]}
                             />
                         </div>
                         <div className="elemento__fotos elemento__3">
@@ -123,32 +123,28 @@ const Page = () => {
                                 typeSpeed={70}
                                 deleteSpeed={50}
                                 delaySpeed={1000}
-                                words={["Block"]}
+                                words={["Game"]}
                             />
                         </div>
                     </div>
                 </div>
                 <div className='Box-message'>
                     {number === 1 &&
-                    <div className='Box-message-item' data-aos="fade-up">
-                        {WEBSITE.map((item) => {
-                            return(
-                                <div key={item.id} className='Box-item_img-cover'>
-                                    <img src={item.img} alt="website"/>
-                                </div>
-                            )
-                        })}
-                    </div>}
+                        <div className='Box-message-item' data-aos="fade-up">
+                            {WEBSITE.map((item) => {
+                                return(
+                                    <div key={item.id} className='Box-item_img-cover'>
+                                        <img src={item.img} alt="website"/>
+                                    </div>
+                                )
+                            })}
+                        </div>
+                    }
                     {number === 2 &&
-                    <div className='Box-message-item' data-aos="fade-up">
-                        {GAME.map((item) => {
-                            return(
-                                <div key={item.id} className='Box-item_img-cover'>
-                                    <img src={item.img} alt={item.name} onClick={() => openModal(item)}/>
-                                </div>
-                            )
-                        })}
-                    </div>}
+                        <div className='Box-message-item' data-aos="fade-up">
+                            <img src="https://i.pinimg.com/originals/17/c9/27/17c927f3a60bf394b8fab7afd40f5f00.png" alt="block"/>
+                        </div>
+                    }
                     {number === 3 &&
                         <>
                             <div className='Box-message-input' style={{display: !open ? "flex" : "none"}} data-aos="fade-up">
@@ -225,23 +221,13 @@ const Page = () => {
                                         </div>
                                     </div>
                                     <div className='Box-item_img-cover'>
-                                        <h3>Tam</h3>
-                                        <div>
-                                            <p>T Nhất ngũ tam |||///.../</p>
-                                            <p>Ngũ tứ |///||///.../</p>
-                                            <p>Tứ nhất tứ ///|||///.../</p>
-                                            <p>Lục tam ||///|///.../</p>
-                                            <p>Hạ tam tam ///.../|||</p>
-                                        </div>
-                                    </div>
-                                    <div className='Box-item_img-cover'>
                                         <h3>Thâu</h3>
                                         <div>
-                                            <p>Thâu chi thượng</p>
-                                            <p>Thâu chi hạ</p>
-                                            <p>Thâu |/././||</p>
-                                            <p>Thâu ||/././|</p>
-                                            <p>Thâu chuẩn 369 ách 0</p>
+                                            <p>Thâu thượng ||///.../</p>
+                                            <p>Thâu hạ ///.../||</p>
+                                            <p>Thâu thượng đơn |///.../(|)</p>
+                                            <p>Thâu số nhị ///||///.../</p>
+                                            <p>Thâu chuẩn ///|///|///.../</p>
                                         </div>
                                     </div>
                                 </div>
@@ -249,9 +235,16 @@ const Page = () => {
                         </>
                     }
                     {number === 4 &&
-                    <div className='Box-message-item' data-aos="fade-up">
-                        <img src="https://i.pinimg.com/originals/17/c9/27/17c927f3a60bf394b8fab7afd40f5f00.png" alt="block"/>
-                    </div>}
+                        <div className='Box-message-item' data-aos="fade-up">
+                            {GAME.map((item) => {
+                                return(
+                                    <div key={item.id} className='Box-item_img-cover'>
+                                        <img src={item.img} alt={item.name} onClick={() => openModal(item)}/>
+                                    </div>
+                                )
+                            })}
+                        </div>
+                    }
                 </div>
                 <ul style={{margin: "20px 20px 0px"}}>
                     <li title='Menu' onClick={() => {router.push("/")}}><FaBackward /></li>
@@ -260,7 +253,7 @@ const Page = () => {
                     <li title='Contact' onClick={() => {router.push("/contact")}}><FaFileContract /></li>
                 </ul>
                 <div className='modal' style={{display: modal ? "flex" : "none"}}>
-                    {number === 2 &&
+                    {number === 4 &&
                     <div className='box'>
                         {GAME.map((item) => {
                             return(
