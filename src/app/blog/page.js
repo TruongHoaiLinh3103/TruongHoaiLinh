@@ -9,6 +9,7 @@ import { useRouter } from 'next/navigation';
 import { Typewriter } from 'react-simple-typewriter';
 import { WEBSITE } from '../../story/WEBSITE';
 import { GAME } from '../../story/GAME';
+import { BLOCK } from '../../story/BLOCK';
 import { FaKey  } from "react-icons/fa";
 import { FaBackward, FaAddressCard, FaBible , FaFileContract } from "react-icons/fa";
 import DOMPurify from 'dompurify';
@@ -84,7 +85,7 @@ const Page = () => {
                                 typeSpeed={70}
                                 deleteSpeed={50}
                                 delaySpeed={1000}
-                                words={["Website"]}
+                                words={["Game"]}
                             />
                         </div>
                         <div className="elemento__fotos elemento__2" onClick={() => numberTwo()}>
@@ -123,7 +124,7 @@ const Page = () => {
                                 typeSpeed={70}
                                 deleteSpeed={50}
                                 delaySpeed={1000}
-                                words={["Game"]}
+                                words={["Website"]}
                             />
                         </div>
                     </div>
@@ -131,10 +132,10 @@ const Page = () => {
                 <div className='Box-message'>
                     {number === 1 &&
                         <div className='Box-message-item' data-aos="fade-up">
-                            {WEBSITE.map((item) => {
+                            {GAME.map((item) => {
                                 return(
                                     <div key={item.id} className='Box-item_img-cover'>
-                                        <img src={item.img} alt="website"/>
+                                        <img src={item.img} alt={item.name} onClick={() => openModal(item)}/>
                                     </div>
                                 )
                             })}
@@ -142,7 +143,13 @@ const Page = () => {
                     }
                     {number === 2 &&
                         <div className='Box-message-item' data-aos="fade-up">
-                            <img src="https://i.pinimg.com/originals/17/c9/27/17c927f3a60bf394b8fab7afd40f5f00.png" alt="block"/>
+                            {BLOCK.map((item) => {
+                                return(
+                                    <div key={item.id} className='Box-item_img-cover'>
+                                        <img src={item.img} alt={item.name} />
+                                    </div>
+                                )
+                            })}
                         </div>
                     }
                     {number === 3 &&
@@ -167,7 +174,7 @@ const Page = () => {
                                             <p>Diện lộ</p>
                                             <p>Hạ diện nguyên</p>
                                             <p>Thượng diện đơn</p>
-                                            <p>Diện giang sơn</p>
+                                            <p>Diện giật phong</p>
                                         </div>
                                     </div>
                                     <div className='Box-item_img-cover'>
@@ -236,10 +243,10 @@ const Page = () => {
                     }
                     {number === 4 &&
                         <div className='Box-message-item' data-aos="fade-up">
-                            {GAME.map((item) => {
+                            {WEBSITE.map((item) => {
                                 return(
                                     <div key={item.id} className='Box-item_img-cover'>
-                                        <img src={item.img} alt={item.name} onClick={() => openModal(item)}/>
+                                        <img src={item.img} alt="website"/>
                                     </div>
                                 )
                             })}
@@ -253,7 +260,7 @@ const Page = () => {
                     <li title='Contact' onClick={() => {router.push("/contact")}}><FaFileContract /></li>
                 </ul>
                 <div className='modal' style={{display: modal ? "flex" : "none"}}>
-                    {number === 4 &&
+                    {number === 1 &&
                     <div className='box'>
                         {GAME.map((item) => {
                             return(
