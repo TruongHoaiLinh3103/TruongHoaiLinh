@@ -100,10 +100,10 @@ const Page = () => {
                                 words={["Block"]}
                             />
                         </div>
-                        <div className="elemento__fotos elemento__3">
+                        <div className="elemento__fotos elemento__3" onClick={() => numberThree()}>
                             <div className="titulo__inicial">Hover Me!</div>
                         </div>
-                        <div className="elemento__fotos elemento__4" onClick={() => numberThree()}>
+                        <div className="elemento__fotos elemento__4">
                             <Typewriter
                                 cursor
                                 loop
