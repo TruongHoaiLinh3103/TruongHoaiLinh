@@ -9,7 +9,7 @@ import { useRouter } from 'next/navigation';
 import { Typewriter } from 'react-simple-typewriter';
 import { WEBSITE } from '../../story/WEBSITE';
 import { GAME } from '../../story/GAME';
-import { BLOCK } from '../../story/BLOCK';
+import { SUPORT } from '../../story/SUPORT';
 import { FaKey  } from "react-icons/fa";
 import { FaBackward, FaAddressCard, FaBible , FaFileContract } from "react-icons/fa";
 import DOMPurify from 'dompurify';
@@ -34,6 +34,9 @@ const Page = () => {
     }
     const numberFour = () => {
         setNumber(4)
+    }
+    const numberFive = () => {
+        setNumber(5)
     }
     const openModal = (item) => {
         setID(item.id)
@@ -88,34 +91,16 @@ const Page = () => {
                                 words={["Game"]}
                             />
                         </div>
-                        <div className="elemento__fotos elemento__2" onClick={() => numberTwo()}>
-                            <Typewriter
-                                cursor
-                                loop
-                                cursorStyle= "|"
-                                cursorColor='black'
-                                typeSpeed={70}
-                                deleteSpeed={50}
-                                delaySpeed={1000}
-                                words={["Block"]}
-                            />
-                        </div>
+                        
+                        <div className="elemento__fotos elemento__2" onClick={() => numberTwo()}></div>
+
                         <div className="elemento__fotos elemento__3" onClick={() => numberThree()}>
                             <div className="titulo__inicial">Hover Me!</div>
                         </div>
-                        <div className="elemento__fotos elemento__4">
-                            <Typewriter
-                                cursor
-                                loop
-                                cursorStyle= "|"
-                                cursorColor='black'
-                                typeSpeed={70}
-                                deleteSpeed={50}
-                                delaySpeed={1000}
-                                words={["Card"]}
-                            />
-                        </div>
-                        <div className="elemento__fotos elemento__5" onClick={() => numberFour()}>
+
+                        <div className="elemento__fotos elemento__4" onClick={() => numberFour()}></div>
+
+                        <div className="elemento__fotos elemento__5" onClick={() => numberFive()}>
                             <Typewriter
                                 cursor
                                 loop
@@ -143,10 +128,14 @@ const Page = () => {
                     }
                     {number === 2 &&
                         <div className='Box-message-item' data-aos="fade-up">
-                            {BLOCK.map((item) => {
+                            {SUPORT.map((item) => {
                                 return(
-                                    <div key={item.id} className='Box-item_img-cover'>
-                                        <img src={item.img} alt={item.name} />
+                                    <div key={item.id}>
+                                        {item.id < 4 && 
+                                            <div className='Box-item_img-cover'>
+                                                <img src={item.img} alt={item.name} />
+                                            </div>
+                                        }
                                     </div>
                                 )
                             })}
@@ -242,6 +231,21 @@ const Page = () => {
                         </>
                     }
                     {number === 4 &&
+                        <div className='Box-message-item' data-aos="fade-up">
+                            {SUPORT.map((item) => {
+                                return(
+                                    <div key={item.id}>
+                                        {item.id > 3 && 
+                                            <div className='Box-item_img-cover'>
+                                                <img src={item.img} alt={item.name} />
+                                            </div>
+                                        }
+                                    </div>
+                                )
+                            })}
+                        </div>
+                    }
+                    {number === 5 &&
                         <div className='Box-message-item' data-aos="fade-up">
                             {WEBSITE.map((item) => {
                                 return(
