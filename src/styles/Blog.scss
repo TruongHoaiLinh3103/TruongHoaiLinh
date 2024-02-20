@@ -305,10 +305,14 @@ h3.title-loading{
 }
 .Box-item_img-cover{
   width: 200px;
-  height: 150px;
+  height: 220px;
   overflow: hidden;
   text-align: center;
   margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   div{
     p{
       color: black;

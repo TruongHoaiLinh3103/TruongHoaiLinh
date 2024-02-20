@@ -2,31 +2,51 @@ export const SUPORT = [
     {
       "id": 1,
       "img": "https://i.pinimg.com/originals/f5/bf/97/f5bf97b452e85dde046f54ecb7fc35e1.jpg",
-      "name": "Balisong"
+      "name": "dark"
     },
     {
       "id": 2,
-      "img": "https://i.pinimg.com/originals/eb/b0/ae/ebb0ae3a1ffdab2afd400f031b3bb4df.jpg",
-      "name": "Illusion"
+      "img": "https://i.pinimg.com/originals/23/a2/73/23a27386b702dcd6d26dd2f87364c1e1.jpg",
+      "name": "dark"
     },
     {
       "id": 3,
-      "img": "https://i.pinimg.com/originals/e6/ee/1e/e6ee1e5a56e5f5dc7dd32fef9a9eb1c1.jpg",
-      "name": "Badminton"
+      "img": "https://i.pinimg.com/originals/e0/42/0b/e0420bef0904d785f30d929e829b5d5a.jpg",
+      "name": "dark"
     },
     {
       "id": 4,
-      "img": "https://i.pinimg.com/originals/87/28/2e/87282efa3aa6fe65ff79ae9ff7242dd6.jpg",
-      "name": "Publications"
+      "img": "https://i.pinimg.com/originals/7f/a5/19/7fa519a8cf6b973d65ec1c2077554626.jpg",
+      "name": "dark"
     },
     {
       "id": 5,
-      "img": "https://i.pinimg.com/originals/cf/af/f6/cfaff60b35b8ffa15d0ec1d218d45174.jpg",
-      "name": "English"
+      "img": "https://i.pinimg.com/originals/e6/ee/1e/e6ee1e5a56e5f5dc7dd32fef9a9eb1c1.jpg",
+      "name": "dark"
     },
     {
       "id": 6,
+      "img": "https://i.pinimg.com/originals/87/28/2e/87282efa3aa6fe65ff79ae9ff7242dd6.jpg",
+      "name": "wind"
+    },
+    {
+      "id": 7,
+      "img": "https://i.pinimg.com/originals/cf/af/f6/cfaff60b35b8ffa15d0ec1d218d45174.jpg",
+      "name": "wind"
+    },
+    {
+      "id": 8,
+      "img": "https://i.pinimg.com/originals/e9/aa/b5/e9aab537cdff27c6cf76eab35a2364f2.jpg",
+      "name": "wind"
+    },
+    {
+      "id": 9,
+      "img": "https://i.pinimg.com/originals/c3/ed/b8/c3edb81da306b1f26a46bb2def79ea49.jpg",
+      "name": "wind"
+    },
+    {
+      "id": 10,
       "img": "https://i.pinimg.com/originals/be/6e/47/be6e47d657e48d32eb8c4c971a3e3fe4.jpg",
-      "name": "Rubik"
+      "name": "wind"
     }
 ]

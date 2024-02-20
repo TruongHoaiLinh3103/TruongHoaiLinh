@@ -131,7 +131,7 @@ const Page = () => {
                             {SUPORT.map((item) => {
                                 return(
                                     <div key={item.id}>
-                                        {item.id < 4 && 
+                                        {item.id < 6 && 
                                             <div className='Box-item_img-cover'>
                                                 <img src={item.img} alt={item.name} />
                                             </div>
@@ -172,8 +172,9 @@ const Page = () => {
                                             <p>Ẩn son</p>
                                             <p>Ẩn tráo</p>
                                             <p>Ẩn như</p>
-                                            <p>Ẩn phi hạ</p>
-                                            <p>Ẩn phi thượng</p>
+                                            <p>Ẩn chia hạ</p>
+                                            <p>Ẩn chia thượng</p>
+                                            <p>Ẩn đôi</p>
                                         </div>
                                     </div>
                                     <div className='Box-item_img-cover'>
@@ -202,8 +203,9 @@ const Page = () => {
                                             <p>Loạn thượng đơn</p>
                                             <p>Loạn song thượng hạ đơn</p>
                                             <p>Loạn phôi</p>
-                                            <p>Hóa kiếp phù du</p>
+                                            <p>Loạn kiếp phù du</p>
                                             <p>Loạn như phật tiền</p>
+                                            <p>Loạn đả địa</p>
                                         </div>
                                     </div>
                                     <div className='Box-item_img-cover'>
@@ -235,7 +237,7 @@ const Page = () => {
                             {SUPORT.map((item) => {
                                 return(
                                     <div key={item.id}>
-                                        {item.id > 3 && 
+                                        {item.id > 5 && 
                                             <div className='Box-item_img-cover'>
                                                 <img src={item.img} alt={item.name} />
                                             </div>
