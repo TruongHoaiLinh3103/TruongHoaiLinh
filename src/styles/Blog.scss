@@ -313,14 +313,16 @@ h3.title-loading{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  div{
-    p{
-      color: black;
-      font-size: 15px;
-      letter-spacing: 1px;
-      font-weight: bold;
-    }
-  }
+}
+.Box-item_content-cover{
+  width: 250px;
+  overflow: hidden;
+  text-align: center;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .Box-item_img-cover img{
   width: 100%;

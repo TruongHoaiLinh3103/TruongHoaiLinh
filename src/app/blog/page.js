@@ -10,6 +10,7 @@ import { Typewriter } from 'react-simple-typewriter';
 import { WEBSITE } from '../../story/WEBSITE';
 import { GAME } from '../../story/GAME';
 import { SUPORT } from '../../story/SUPORT';
+import { DETAIL } from "../../story/DETAIL"
 import { FaKey  } from "react-icons/fa";
 import { FaBackward, FaAddressCard, FaBible , FaFileContract } from "react-icons/fa";
 import DOMPurify from 'dompurify';
@@ -131,7 +132,7 @@ const Page = () => {
                             {SUPORT.map((item) => {
                                 return(
                                     <div key={item.id}>
-                                        {item.id < 6 && 
+                                        {item.id < 5 && 
                                             <div className='Box-item_img-cover'>
                                                 <img src={item.img} alt={item.name} />
                                             </div>
@@ -155,80 +156,91 @@ const Page = () => {
                                 </div>
                             </div>
                             {open && 
-                                <div className='Box-message-item' data-aos="fade-up">
-                                    <div className='Box-item_img-cover'>
-                                        <h3>Diện</h3>
-                                        <div>
-                                            <p>Diện cầu</p>
-                                            <p>Diện lộ</p>
-                                            <p>Hạ diện nguyên</p>
-                                            <p>Thượng diện đơn</p>
-                                            <p>Diện giật phong</p>
+                                <>
+                                    <div className='Box-message-item' data-aos="fade-up">
+                                        <div className='Box-item_content-cover'>
+                                            <h3>Diện</h3>
+                                            <select>
+                                                <option>Diện cầu</option>
+                                                <option>Diện lộ</option>
+                                                <option>Diện thượng đơn</option>
+                                                <option>Diện giật phong</option>
+                                                <option>Diện chia thượng</option>
+                                                <option>Diện loạn khôi</option>
+                                            </select>
+                                        </div>
+                                        <div className='Box-item_content-cover'>
+                                            <h3>Ẩn</h3>
+                                            <select>
+                                                <option>Ẩn son</option>
+                                                <option>Ẩn tráo</option>
+                                                <option>Ẩn như</option>
+                                                <option>Ẩn chia hạ</option>
+                                                <option>Ẩn đôi</option>
+                                                <option>Ẩn loạn thượng đơn</option>
+                                                <option>Ẩn loạn thượng hạ song</option>
+                                                <option>Ẩn như phật tiền</option>
+                                                <option>Ẩn đả địa</option>
+                                            </select>
+                                        </div>
+                                        <div className='Box-item_content-cover'>
+                                            <h3>Ảo</h3>
+                                            <select>
+                                                <option>Ảo danh nhị</option>
+                                                <option>Ảo danh nhất</option>
+                                                <option>Ảo phi khống</option>
+                                                <option>Ảo lưỡng nghi</option>
+                                                <option>Ảo tam chỉ</option>
+                                                <option>Ảo trảm danh ngũ</option>
+                                                <option>Ảo trảm danh nhị</option>
+                                                <option>Ảo trảm thượng đơn hạ hạ</option>
+                                                <option>Ảo trảm giả ẩn son</option>
+                                                <option>Ảo kiếp phù du</option>
+                                            </select>
+                                        </div>
+                                        <div className='Box-item_content-cover'>
+                                            <h3>Thao</h3>
+                                            <select>
+                                                <option>Thao nhập song tứ</option>
+                                                <option>Thao nhập thượng ngũ tam</option>
+                                                <option>Thao nhập thượng hạ tứ tam</option>
+                                                <option>Thao nhập tam nhị tam</option>
+                                                <option>Thao nhập hạ song tam</option>
+                                                <option>Thao thâu thượng</option>
+                                                <option>Thao thâu hạ</option>
+                                                <option>Thao thâu thượng đơn</option>
+                                                <option>Thao thâu số trong</option>
+                                                <option>Thao thâu chuẩn</option>
+                                            </select>
                                         </div>
                                     </div>
-                                    <div className='Box-item_img-cover'>
-                                        <h3>Ẩn</h3>
-                                        <div>
-                                            <p>Ẩn son</p>
-                                            <p>Ẩn tráo</p>
-                                            <p>Ẩn như</p>
-                                            <p>Ẩn chia hạ</p>
-                                            <p>Ẩn chia thượng</p>
-                                            <p>Ẩn đôi</p>
-                                        </div>
+                                    <div className='Box-message-item'>
+                                        {DETAIL.map((item) => {
+                                            return(
+                                                <div key={item.id}>
+                                                    {item.id < 5 && 
+                                                        <div className='Box-item_img-cover'>
+                                                            <img src={item.img} alt={item.name} />
+                                                        </div>
+                                                    }
+                                                </div>
+                                            )
+                                        })}
                                     </div>
-                                    <div className='Box-item_img-cover'>
-                                        <h3>Ảo</h3>
-                                        <div>
-                                            <p>Ảo danh nhị</p>
-                                            <p>Ảo danh nhất</p>
-                                            <p>Ảo phi khống</p>
-                                            <p>Ảo lưỡng nghi</p>
-                                            <p>Ảo tam chỉ</p>
-                                        </div>
+                                    <div className='Box-message-item'>
+                                        {DETAIL.map((item) => {
+                                            return(
+                                                <div key={item.id}>
+                                                    {item.id > 4&&
+                                                        <div className='Box-item_img-cover'>
+                                                            <img src={item.img} alt={item.name} />
+                                                        </div>
+                                                    }
+                                                </div>
+                                            )
+                                        })}
                                     </div>
-                                    <div className='Box-item_img-cover'>
-                                        <h3>Trảm</h3>
-                                        <div>
-                                            <p>Trảm danh ngũ</p>
-                                            <p>Trảm danh nhị</p>
-                                            <p>Trảm song thủ</p>
-                                            <p>Trảm thượng đơn hạ hạ</p>
-                                            <p>Trảm giả ẩn son</p>
-                                        </div>
-                                    </div>
-                                    <div className='Box-item_img-cover'>
-                                        <h3>Loạn</h3>
-                                        <div>
-                                            <p>Loạn thượng đơn</p>
-                                            <p>Loạn song thượng hạ đơn</p>
-                                            <p>Loạn phôi</p>
-                                            <p>Loạn kiếp phù du</p>
-                                            <p>Loạn như phật tiền</p>
-                                            <p>Loạn đả địa</p>
-                                        </div>
-                                    </div>
-                                    <div className='Box-item_img-cover'>
-                                        <h3>Nhị</h3>
-                                        <div>
-                                            <p>Song tứ |///|///.../</p>
-                                            <p>Thượng ngũ tam ||///.../</p>
-                                            <p>Thượng hạ tứ tam |///.../|</p>
-                                            <p>Tam nhị tam ///||///.../</p>
-                                            <p>Hạ song tam ///.../||</p>
-                                        </div>
-                                    </div>
-                                    <div className='Box-item_img-cover'>
-                                        <h3>Thâu</h3>
-                                        <div>
-                                            <p>Thâu thượng ||///.../</p>
-                                            <p>Thâu hạ ///.../||</p>
-                                            <p>Thâu thượng đơn |///.../(|)</p>
-                                            <p>Thâu số nhị ///||///.../</p>
-                                            <p>Thâu chuẩn ///|///|///.../</p>
-                                        </div>
-                                    </div>
-                                </div>
+                                </>
                             }
                         </>
                     }
@@ -237,7 +249,7 @@ const Page = () => {
                             {SUPORT.map((item) => {
                                 return(
                                     <div key={item.id}>
-                                        {item.id > 5 && 
+                                        {item.id > 4 && 
                                             <div className='Box-item_img-cover'>
                                                 <img src={item.img} alt={item.name} />
                                             </div>

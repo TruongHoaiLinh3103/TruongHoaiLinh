@@ -27,4 +27,8 @@ export const WEBSITE = [
         "id": 7,
         "img": "https://i.pinimg.com/originals/4b/62/c9/4b62c9ae3eb4221e98d4896ecea9ded2.jpg"
       },
+      {
+        "id": 8,
+        "img": "https://i.pinimg.com/originals/cf/af/f6/cfaff60b35b8ffa15d0ec1d218d45174.jpg"
+      }
 ]
