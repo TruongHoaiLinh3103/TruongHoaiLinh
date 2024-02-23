@@ -38,5 +38,85 @@ export const DETAIL = [
       "id": 8,
       "img": "https://i.pinimg.com/originals/d8/a1/fe/d8a1fecf2ae8e8e752c6f8512f7e712a.jpg",
       "name": "Calligraphy"
+    },
+    {
+      "id": 9,
+      "img": "https://i.pinimg.com/originals/28/86/85/288685640b9c1f4dd71a1dc96d0f7365.jpg",
+      "name": "comic"
+    },
+    {
+      "id": 10,
+      "img": "https://i.pinimg.com/originals/fb/02/ef/fb02efc76af03f42323065674e1bc4ba.jpg",
+      "name": "comic"
+    },
+    {
+      "id": 11,
+      "img": "https://i.pinimg.com/originals/9b/87/27/9b8727d573f5f6b18e3583ec526c0eca.jpg",
+      "name": "comic"
+    },
+    {
+      "id": 12,
+      "img": "https://i.pinimg.com/originals/07/55/b5/0755b5ed66ddf772e7b57edd6c5d20b8.jpg",
+      "name": "comic"
+    },
+    {
+      "id": 13,
+      "img": "https://i.pinimg.com/originals/6e/45/99/6e4599194b77797d7a2b5bc5adc3d0c7.jpg",
+      "name": "Badminton"
+    },
+    {
+      "id": 14,
+      "img": "https://i.pinimg.com/originals/4b/7d/9c/4b7d9c5390c606b89731fd23b0db37cd.png",
+      "name": "Badminton"
+    },
+    {
+      "id": 15,
+      "img": "https://i.pinimg.com/originals/5f/db/37/5fdb371f240a0248c5622602b511696f.jpg",
+      "name": "Badminton"
+    },
+    {
+      "id": 16,
+      "img": "https://i.pinimg.com/originals/77/ed/c3/77edc3e316b6760b48fcec110a153db9.jpg",
+      "name": "Badminton"
+    },
+    {
+      "id": 17,
+      "img": "https://i.pinimg.com/originals/d2/57/b9/d257b99075cc860b23048112ebae97c0.jpg",
+      "name": "Kungfu"
+    },
+    {
+      "id": 18,
+      "img": "https://i.pinimg.com/originals/3f/fc/5b/3ffc5b0ec0ee8a1b065c7520402ed849.jpg",
+      "name": "Kungfu"
+    },
+    {
+      "id": 19,
+      "img": "https://i.pinimg.com/originals/99/fc/59/99fc59c9fe2b94a80ecf7222b9827846.jpg",
+      "name": "Kungfu"
+    },
+    {
+      "id": 20,
+      "img": "https://i.pinimg.com/originals/f0/a2/1c/f0a21c82cf43cff6fc0a175a96a02814.jpg",
+      "name": "Kungfu"
+    },
+    {
+      "id": 21,
+      "img": "https://i.pinimg.com/originals/94/10/ba/9410bab0186b52905d639979e13c0ade.jpg",
+      "name": "food"
+    },
+    {
+      "id": 22,
+      "img": "https://i.pinimg.com/originals/84/89/bc/8489bc53d1c34959fa1c04f41a960295.jpg",
+      "name": "food"
+    },
+    {
+      "id": 23,
+      "img": "https://i.pinimg.com/originals/e0/91/58/e0915832ca8c18e3fdf9819d044cc9e3.jpg",
+      "name": "food"
+    },
+    {
+      "id": 24,
+      "img": "https://i.pinimg.com/originals/07/55/b5/0755b5ed66ddf772e7b57edd6c5d20b8.jpg",
+      "name": "food"
     }
 ]

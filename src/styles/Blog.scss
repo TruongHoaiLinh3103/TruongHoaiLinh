@@ -315,7 +315,7 @@ h3.title-loading{
   flex-direction: column;
 }
 .Box-item_content-cover{
-  width: 250px;
+  width: 100%;
   overflow: hidden;
   text-align: center;
   margin: 10px;
@@ -323,6 +323,22 @@ h3.title-loading{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  h3{
+    margin: 5px 0px;
+    font-family:'Courier New', Courier, monospace;
+  }
+  select{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    option:not(:checked) { color: black; background-color: white; }
+  }
 }
 .Box-item_img-cover img{
   width: 100%;

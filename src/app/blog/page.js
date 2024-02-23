@@ -132,7 +132,7 @@ const Page = () => {
                             {SUPORT.map((item) => {
                                 return(
                                     <div key={item.id}>
-                                        {item.id < 5 && 
+                                        {item.id < 6 && 
                                             <div className='Box-item_img-cover'>
                                                 <img src={item.img} alt={item.name} />
                                             </div>
@@ -157,7 +157,24 @@ const Page = () => {
                             </div>
                             {open && 
                                 <>
-                                    <div className='Box-message-item' data-aos="fade-up">
+                                    <div style={{display: 'grid', gridTemplateColumns: "30% 70%"}}>
+                                        <div style={{margin: "0px auto"}}>
+                                            <Typewriter
+                                                cursor
+                                                loop
+                                                cursorStyle= "|"
+                                                cursorColor='black'
+                                                typeSpeed={70}
+                                                deleteSpeed={50}
+                                                delaySpeed={1000}
+                                                words={["WIND"]}
+                                            />
+                                        </div>
+                                        <div>
+                                            <img style={{width: "100%", height: "100%", objectFit: "cover"}} src="https://i.pinimg.com/originals/6b/58/be/6b58bef34530f2eded32552133c826a5.png" alt="Wind" />
+                                        </div>
+                                    </div>
+                                    <div className='Box-message-item'>
                                         <div className='Box-item_content-cover'>
                                             <h3>Diện</h3>
                                             <select>
@@ -231,7 +248,133 @@ const Page = () => {
                                         {DETAIL.map((item) => {
                                             return(
                                                 <div key={item.id}>
-                                                    {item.id > 4&&
+                                                    {item.id > 4 && item.id < 9 &&
+                                                        <div className='Box-item_img-cover'>
+                                                            <img src={item.img} alt={item.name} />
+                                                        </div>
+                                                    }
+                                                </div>
+                                            )
+                                        })}
+                                    </div>
+                                    <div className='Box-message-item'>
+                                        {DETAIL.map((item) => {
+                                            return(
+                                                <div key={item.id}>
+                                                    {item.id > 8 && item.id < 13 &&
+                                                        <div className='Box-item_img-cover'>
+                                                            <img src={item.img} alt={item.name} />
+                                                        </div>
+                                                    }
+                                                </div>
+                                            )
+                                        })}
+                                    </div>
+                                    <div style={{display: 'grid', gridTemplateColumns: "30% 70%"}}>
+                                        <div style={{margin: "0px auto"}}>
+                                            <Typewriter
+                                                cursor
+                                                loop
+                                                cursorStyle= "|"
+                                                cursorColor='black'
+                                                typeSpeed={70}
+                                                deleteSpeed={50}
+                                                delaySpeed={1000}
+                                                words={["DARK"]}
+                                            />
+                                        </div>
+                                        <div>
+                                            <img style={{width: "100%", height: "100%", objectFit: "cover"}} src="https://i.pinimg.com/originals/6b/58/be/6b58bef34530f2eded32552133c826a5.png" alt="Dark" />
+                                        </div>
+                                    </div>
+                                    <div className='Box-message-item'>
+                                        <div className='Box-item_content-cover'>
+                                            <h3>Diện</h3>
+                                            <select>
+                                                <option>Diện cầu</option>
+                                                <option>Diện lộ</option>
+                                                <option>Diện thượng đơn</option>
+                                                <option>Diện giật phong</option>
+                                                <option>Diện chia thượng</option>
+                                                <option>Diện loạn khôi</option>
+                                            </select>
+                                        </div>
+                                        <div className='Box-item_content-cover'>
+                                            <h3>Ẩn</h3>
+                                            <select>
+                                                <option>Ẩn son</option>
+                                                <option>Ẩn tráo</option>
+                                                <option>Ẩn như</option>
+                                                <option>Ẩn chia hạ</option>
+                                                <option>Ẩn đôi</option>
+                                                <option>Ẩn loạn thượng đơn</option>
+                                                <option>Ẩn loạn thượng hạ song</option>
+                                                <option>Ẩn như phật tiền</option>
+                                                <option>Ẩn đả địa</option>
+                                            </select>
+                                        </div>
+                                        <div className='Box-item_content-cover'>
+                                            <h3>Ảo</h3>
+                                            <select>
+                                                <option>Ảo danh nhị</option>
+                                                <option>Ảo danh nhất</option>
+                                                <option>Ảo phi khống</option>
+                                                <option>Ảo lưỡng nghi</option>
+                                                <option>Ảo tam chỉ</option>
+                                                <option>Ảo trảm danh ngũ</option>
+                                                <option>Ảo trảm danh nhị</option>
+                                                <option>Ảo trảm thượng đơn hạ hạ</option>
+                                                <option>Ảo trảm giả ẩn son</option>
+                                                <option>Ảo kiếp phù du</option>
+                                            </select>
+                                        </div>
+                                        <div className='Box-item_content-cover'>
+                                            <h3>Thao</h3>
+                                            <select>
+                                                <option>Thao nhập song tứ</option>
+                                                <option>Thao nhập thượng ngũ tam</option>
+                                                <option>Thao nhập thượng hạ tứ tam</option>
+                                                <option>Thao nhập tam nhị tam</option>
+                                                <option>Thao nhập hạ song tam</option>
+                                                <option>Thao thâu thượng</option>
+                                                <option>Thao thâu hạ</option>
+                                                <option>Thao thâu thượng đơn</option>
+                                                <option>Thao thâu số trong</option>
+                                                <option>Thao thâu chuẩn</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div className='Box-message-item'>
+                                        {DETAIL.map((item) => {
+                                            return(
+                                                <div key={item.id}>
+                                                    {item.id > 12 && item.id < 17 && 
+                                                        <div className='Box-item_img-cover'>
+                                                            <img src={item.img} alt={item.name} />
+                                                        </div>
+                                                    }
+                                                </div>
+                                            )
+                                        })}
+                                    </div>
+                                    <div className='Box-message-item'>
+                                        {DETAIL.map((item) => {
+                                            return(
+                                                <div key={item.id}>
+                                                    {item.id > 16 && item.id < 21 &&
+                                                        <div className='Box-item_img-cover'>
+                                                            <img src={item.img} alt={item.name} />
+                                                        </div>
+                                                    }
+                                                </div>
+                                            )
+                                        })}
+                                    </div>
+                                    <div className='Box-message-item'>
+                                        {DETAIL.map((item) => {
+                                            return(
+                                                <div key={item.id}>
+                                                    {item.id > 20 &&
                                                         <div className='Box-item_img-cover'>
                                                             <img src={item.img} alt={item.name} />
                                                         </div>
@@ -249,7 +392,7 @@ const Page = () => {
                             {SUPORT.map((item) => {
                                 return(
                                     <div key={item.id}>
-                                        {item.id > 4 && 
+                                        {item.id > 5 && 
                                             <div className='Box-item_img-cover'>
                                                 <img src={item.img} alt={item.name} />
                                             </div>
