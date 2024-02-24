@@ -14,6 +14,7 @@ import { DETAIL } from "../../story/DETAIL"
 import { FaKey  } from "react-icons/fa";
 import { FaBackward, FaAddressCard, FaBible , FaFileContract } from "react-icons/fa";
 import DOMPurify from 'dompurify';
+import { VIDEOBALISONG } from '@/story/VIDEOBALISONG';
 
 const Page = () => {
     const {check} = FetchLoading();
@@ -132,7 +133,7 @@ const Page = () => {
                             {SUPORT.map((item) => {
                                 return(
                                     <div key={item.id}>
-                                        {item.id < 6 && 
+                                        {item.id < 5 && 
                                             <div className='Box-item_img-cover'>
                                                 <img src={item.img} alt={item.name} />
                                             </div>
@@ -171,7 +172,7 @@ const Page = () => {
                                             />
                                         </div>
                                         <div>
-                                            <img style={{width: "100%", height: "100%", objectFit: "cover"}} src="https://i.pinimg.com/originals/6b/58/be/6b58bef34530f2eded32552133c826a5.png" alt="Wind" />
+                                            <img style={{width: "100%", height: "100%", objectFit: "cover"}} src="https://i.pinimg.com/originals/31/a6/a9/31a6a9a1d5ff1eefd41d384d406c6989.png" alt="Wind" />
                                         </div>
                                     </div>
                                     <div className='Box-message-item'>
@@ -284,65 +285,21 @@ const Page = () => {
                                             />
                                         </div>
                                         <div>
-                                            <img style={{width: "100%", height: "100%", objectFit: "cover"}} src="https://i.pinimg.com/originals/6b/58/be/6b58bef34530f2eded32552133c826a5.png" alt="Dark" />
+                                            <img style={{width: "100%", height: "100%", objectFit: "cover"}} src="https://i.pinimg.com/originals/ec/fc/a4/ecfca4b9b866b218b962f1b79b62078f.png" alt="Dark" />
                                         </div>
                                     </div>
                                     <div className='Box-message-item'>
-                                        <div className='Box-item_content-cover'>
-                                            <h3>Diện</h3>
-                                            <select>
-                                                <option>Diện cầu</option>
-                                                <option>Diện lộ</option>
-                                                <option>Diện thượng đơn</option>
-                                                <option>Diện giật phong</option>
-                                                <option>Diện chia thượng</option>
-                                                <option>Diện loạn khôi</option>
-                                            </select>
-                                        </div>
-                                        <div className='Box-item_content-cover'>
-                                            <h3>Ẩn</h3>
-                                            <select>
-                                                <option>Ẩn son</option>
-                                                <option>Ẩn tráo</option>
-                                                <option>Ẩn như</option>
-                                                <option>Ẩn chia hạ</option>
-                                                <option>Ẩn đôi</option>
-                                                <option>Ẩn loạn thượng đơn</option>
-                                                <option>Ẩn loạn thượng hạ song</option>
-                                                <option>Ẩn như phật tiền</option>
-                                                <option>Ẩn đả địa</option>
-                                            </select>
-                                        </div>
-                                        <div className='Box-item_content-cover'>
-                                            <h3>Ảo</h3>
-                                            <select>
-                                                <option>Ảo danh nhị</option>
-                                                <option>Ảo danh nhất</option>
-                                                <option>Ảo phi khống</option>
-                                                <option>Ảo lưỡng nghi</option>
-                                                <option>Ảo tam chỉ</option>
-                                                <option>Ảo trảm danh ngũ</option>
-                                                <option>Ảo trảm danh nhị</option>
-                                                <option>Ảo trảm thượng đơn hạ hạ</option>
-                                                <option>Ảo trảm giả ẩn son</option>
-                                                <option>Ảo kiếp phù du</option>
-                                            </select>
-                                        </div>
-                                        <div className='Box-item_content-cover'>
-                                            <h3>Thao</h3>
-                                            <select>
-                                                <option>Thao nhập song tứ</option>
-                                                <option>Thao nhập thượng ngũ tam</option>
-                                                <option>Thao nhập thượng hạ tứ tam</option>
-                                                <option>Thao nhập tam nhị tam</option>
-                                                <option>Thao nhập hạ song tam</option>
-                                                <option>Thao thâu thượng</option>
-                                                <option>Thao thâu hạ</option>
-                                                <option>Thao thâu thượng đơn</option>
-                                                <option>Thao thâu số trong</option>
-                                                <option>Thao thâu chuẩn</option>
-                                            </select>
-                                        </div>
+                                        {VIDEOBALISONG.map((item) => {
+                                            return(
+                                                <div className='Box-item_img-cover' key={item.id}>
+                                                    <video controls style={{width: "100%", height: "100%"}}>
+                                                        <source src={item.video} type="video/mp4" />
+                                                    </video>
+                                                </div>
+                                            )
+                                        })
+                                        }
+                                        
                                     </div>
                                     <div className='Box-message-item'>
                                         {DETAIL.map((item) => {
@@ -392,7 +349,7 @@ const Page = () => {
                             {SUPORT.map((item) => {
                                 return(
                                     <div key={item.id}>
-                                        {item.id > 5 && 
+                                        {item.id > 4 && 
                                             <div className='Box-item_img-cover'>
                                                 <img src={item.img} alt={item.name} />
                                             </div>

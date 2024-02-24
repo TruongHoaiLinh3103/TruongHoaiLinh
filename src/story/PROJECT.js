@@ -58,6 +58,5 @@ export const PROJECT = [
                 video: `${TintuctonghopVideo}`
             },
         ]
-        
     },
 ]

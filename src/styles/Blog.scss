@@ -340,7 +340,7 @@ h3.title-loading{
     option:not(:checked) { color: black; background-color: white; }
   }
 }
-.Box-item_img-cover img{
+.Box-item_img-cover img, .Box-item_img-cover video{
   width: 100%;
   height: 100%;
   object-fit: cover;

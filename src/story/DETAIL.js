@@ -111,12 +111,12 @@ export const DETAIL = [
     },
     {
       "id": 23,
-      "img": "https://i.pinimg.com/originals/e0/91/58/e0915832ca8c18e3fdf9819d044cc9e3.jpg",
+      "img": "https://i.pinimg.com/originals/4d/a8/e2/4da8e27f6a9bc917c23ebed5dfad758e.jpg",
       "name": "food"
     },
     {
       "id": 24,
-      "img": "https://i.pinimg.com/originals/07/55/b5/0755b5ed66ddf772e7b57edd6c5d20b8.jpg",
+      "img": "https://i.pinimg.com/originals/e3/3c/28/e33c28567e9f064eac2e205d5a97a5e3.jpg",
       "name": "food"
     }
 ]
