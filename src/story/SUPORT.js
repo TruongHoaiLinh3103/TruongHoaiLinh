@@ -1,12 +1,12 @@
 export const SUPORT = [
     {
       "id": 1,
-      "img": "https://i.pinimg.com/originals/f5/bf/97/f5bf97b452e85dde046f54ecb7fc35e1.jpg",
+      "img": "https://i.pinimg.com/originals/c5/5d/c6/c55dc668dbfffe04e967faa5a3474e90.png",
       "name": "dark"
     },
     {
       "id": 2,
-      "img": "https://i.pinimg.com/originals/e6/ee/1e/e6ee1e5a56e5f5dc7dd32fef9a9eb1c1.jpg",
+      "img": "https://i.pinimg.com/originals/e9/a5/df/e9a5df2fb348ccf85e98a85ca1c3c383.jpg",
       "name": "dark"
     },
     {
@@ -21,12 +21,12 @@ export const SUPORT = [
     },
     {
       "id": 5,
-      "img": "https://i.pinimg.com/originals/c3/ed/b8/c3edb81da306b1f26a46bb2def79ea49.jpg",
+      "img": "https://i.pinimg.com/originals/be/6e/47/be6e47d657e48d32eb8c4c971a3e3fe4.jpg",
       "name": "wind"
     },
     {
       "id": 6,
-      "img": "https://i.pinimg.com/originals/be/6e/47/be6e47d657e48d32eb8c4c971a3e3fe4.jpg",
+      "img": "https://i.pinimg.com/originals/c3/ed/b8/c3edb81da306b1f26a46bb2def79ea49.jpg",
       "name": "wind"
     },
     {

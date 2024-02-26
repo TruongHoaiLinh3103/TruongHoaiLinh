@@ -172,7 +172,7 @@ const Page = () => {
                                             />
                                         </div>
                                         <div>
-                                            <img style={{width: "100%", height: "100%", objectFit: "cover"}} src="https://i.pinimg.com/originals/31/a6/a9/31a6a9a1d5ff1eefd41d384d406c6989.png" alt="Wind" />
+                                            <img style={{width: "100%", height: "100%", objectFit: "cover"}} src="https://i.pinimg.com/originals/9b/a4/65/9ba465f1d0f1e7581f3aafe8b78fac19.png" alt="Wind" />
                                         </div>
                                     </div>
                                     <div className='Box-message-item'>
@@ -258,19 +258,6 @@ const Page = () => {
                                             )
                                         })}
                                     </div>
-                                    <div className='Box-message-item'>
-                                        {DETAIL.map((item) => {
-                                            return(
-                                                <div key={item.id}>
-                                                    {item.id > 8 && item.id < 13 &&
-                                                        <div className='Box-item_img-cover'>
-                                                            <img src={item.img} alt={item.name} />
-                                                        </div>
-                                                    }
-                                                </div>
-                                            )
-                                        })}
-                                    </div>
                                     <div style={{display: 'grid', gridTemplateColumns: "30% 70%"}}>
                                         <div style={{margin: "0px auto"}}>
                                             <Typewriter
@@ -285,7 +272,7 @@ const Page = () => {
                                             />
                                         </div>
                                         <div>
-                                            <img style={{width: "100%", height: "100%", objectFit: "cover"}} src="https://i.pinimg.com/originals/ec/fc/a4/ecfca4b9b866b218b962f1b79b62078f.png" alt="Dark" />
+                                            <img style={{width: "100%", height: "100%", objectFit: "cover"}} src="https://i.pinimg.com/originals/6b/58/be/6b58bef34530f2eded32552133c826a5.png" alt="Dark" />
                                         </div>
                                     </div>
                                     <div className='Box-message-item'>
@@ -305,7 +292,7 @@ const Page = () => {
                                         {DETAIL.map((item) => {
                                             return(
                                                 <div key={item.id}>
-                                                    {item.id > 12 && item.id < 17 && 
+                                                    { item.id > 8 && item.id < 13 && 
                                                         <div className='Box-item_img-cover'>
                                                             <img src={item.img} alt={item.name} />
                                                         </div>
@@ -318,20 +305,7 @@ const Page = () => {
                                         {DETAIL.map((item) => {
                                             return(
                                                 <div key={item.id}>
-                                                    {item.id > 16 && item.id < 21 &&
-                                                        <div className='Box-item_img-cover'>
-                                                            <img src={item.img} alt={item.name} />
-                                                        </div>
-                                                    }
-                                                </div>
-                                            )
-                                        })}
-                                    </div>
-                                    <div className='Box-message-item'>
-                                        {DETAIL.map((item) => {
-                                            return(
-                                                <div key={item.id}>
-                                                    {item.id > 20 &&
+                                                    {item.id > 12 &&
                                                         <div className='Box-item_img-cover'>
                                                             <img src={item.img} alt={item.name} />
                                                         </div>
