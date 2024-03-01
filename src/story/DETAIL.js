@@ -1,23 +1,23 @@
 export const DETAIL = [
     {
       "id": 1,
-      "img": "https://i.pinimg.com/originals/c4/62/27/c46227f8720d82dec0b725a9920532a4.jpg",
-      "name": "Calligraphy"
+      "img": "https://i.pinimg.com/originals/9b/a4/65/9ba465f1d0f1e7581f3aafe8b78fac19.png",
+      "name": "other"
     },
     {
       "id": 2,
-      "img": "https://i.pinimg.com/originals/87/28/2e/87282efa3aa6fe65ff79ae9ff7242dd6.jpg",
-      "name": "Calligraphy"
+      "img": "https://i.pinimg.com/originals/c3/ed/b8/c3edb81da306b1f26a46bb2def79ea49.jpg",
+      "name": "other"
     },
     {
       "id": 3,
       "img": "https://i.pinimg.com/originals/3e/1a/c9/3e1ac97d5b7e4196a5dbc9e93e760ae9.jpg",
-      "name": "Calligraphy"
+      "name": "other"
     },
     {
       "id": 4,
-      "img": "https://i.pinimg.com/originals/d8/a1/fe/d8a1fecf2ae8e8e752c6f8512f7e712a.jpg",
-      "name": "Calligraphy"
+      "img": "https://i.pinimg.com/originals/be/ed/23/beed23ec1415c8b7aa2abdbd5467d163.jpg",
+      "name": "other"
     },
     {
       "id": 5,
@@ -36,28 +36,28 @@ export const DETAIL = [
     },
     {
       "id": 8,
-      "img": "https://i.pinimg.com/originals/07/55/b5/0755b5ed66ddf772e7b57edd6c5d20b8.jpg",
+      "img": "https://i.pinimg.com/originals/16/73/4b/16734bbdde488229730959ea4eb204fd.jpg",
       "name": "comic"
     },
     {
       "id": 9,
       "img": "https://i.pinimg.com/originals/d2/57/b9/d257b99075cc860b23048112ebae97c0.jpg",
-      "name": "Kungfu"
+      "name": "sport"
     },
     {
       "id": 10,
-      "img": "https://i.pinimg.com/originals/3f/fc/5b/3ffc5b0ec0ee8a1b065c7520402ed849.jpg",
-      "name": "Kungfu"
+      "img": "https://i.pinimg.com/originals/66/36/4f/66364f9824b421c3f3b2d1f23ea743f6.png",
+      "name": "sport"
     },
     {
       "id": 11,
-      "img": "https://i.pinimg.com/originals/84/9a/30/849a30241420d75a21632e9514cc5762.jpg",
-      "name": "Kungfu"
+      "img": "https://i.pinimg.com/originals/83/14/81/831481b325e814d02d48da216b2f3d17.png",
+      "name": "sport"
     },
     {
       "id": 12,
       "img": "https://i.pinimg.com/originals/43/cc/c8/43ccc879ac920577ed010229d5bf97ef.jpg",
-      "name": "Kungfu"
+      "name": "sport"
     },
     {
       "id": 13,
