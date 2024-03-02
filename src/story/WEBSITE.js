@@ -13,7 +13,7 @@ export const WEBSITE = [
       },
       {
         "id": 4,
-        "img": "https://i.pinimg.com/originals/de/8d/ef/de8defee0c582e794d99d02b11947d6f.jpg"
+        "img": "https://i.pinimg.com/originals/fb/66/07/fb660747f7458d16dd20513760d80196.jpg"
       },
       {
         "id": 5,
@@ -26,5 +26,9 @@ export const WEBSITE = [
       {
         "id": 7,
         "img": "https://i.pinimg.com/originals/0e/5f/2d/0e5f2d114420bfcb7afc1cabd98de71b.jpg"
+      },
+      {
+        "id": 8,
+        "img": "https://i.pinimg.com/originals/de/8d/ef/de8defee0c582e794d99d02b11947d6f.jpg"
       }
 ]
