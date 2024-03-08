@@ -266,7 +266,7 @@ const Page = () => {
                             {WEBSITE.map((item) => {
                                 return(
                                     <div key={item.id} className='Box-item_img-cover'>
-                                        <img src={item.img} alt="website"/>
+                                        <img title={item.title} src={item.img} alt="website"/>
                                     </div>
                                 )
                             })}
