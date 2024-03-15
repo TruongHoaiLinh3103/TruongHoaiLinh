@@ -46,7 +46,7 @@ export const DETAIL = [
     },
     {
       "id": 10,
-      "img": "https://i.pinimg.com/originals/28/a3/4c/28a34c675b7e14acbcc584db633e9cca.jpg",
+      "img": "https://i.pinimg.com/originals/5a/e1/58/5ae15822d73ac828599044153fb91fed.jpg",
       "name": "comic"
     },
     {
@@ -61,7 +61,7 @@ export const DETAIL = [
     },
     {
       "id": 13,
-      "img": "https://i.pinimg.com/originals/d6/df/f0/d6dff03bc5e48070d5280fc1a979ab06.jpg",
+      "img": "https://i.pinimg.com/originals/b7/93/10/b79310f710bea5271f89e06bac022832.jpg",
       "name": "food"
     },
     {
