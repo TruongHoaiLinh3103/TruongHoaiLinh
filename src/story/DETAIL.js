@@ -21,7 +21,7 @@ export const DETAIL = [
     },
     {
       "id": 5,
-      "img": "https://i.pinimg.com/originals/ee/10/d8/ee10d897a67a31be7bbdfed10b30c1da.png",
+      "img": "https://i.pinimg.com/originals/ba/94/4b/ba944bea6c57c42d6fbc6dbe04d1fddd.png",
       "name": "game"
     },
     {
