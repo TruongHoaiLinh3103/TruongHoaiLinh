@@ -85,7 +85,7 @@ const Page = () => {
                             {DETAIL.map((item) => {
                                 return(
                                     <div key={item.id}>
-                                        { item.id < 6 && 
+                                        { item.id < 5 && 
                                             <div className='Box-item_img-cover' onClick={() => router.push(item.img)}>
                                                 <img src={item.img} alt={item.name}/>
                                             </div>
@@ -100,7 +100,7 @@ const Page = () => {
                             {DETAIL.map((item) => {
                                 return(
                                     <div key={item.id}>
-                                        {item.id > 5 && item.id < 11 &&
+                                        {item.id > 4 && item.id < 9 &&
                                             <div className='Box-item_img-cover' onClick={() => router.push(item.img)}>
                                                 <img src={item.img} alt={item.name}/>
                                             </div>
@@ -115,7 +115,7 @@ const Page = () => {
                             {DETAIL.map((item) => {
                                 return(
                                     <div key={item.id}>
-                                        {item.id > 10 && item.id < 16 && 
+                                        {item.id > 8 && item.id < 13 && 
                                             <div className='Box-item_img-cover' onClick={() => router.push(item.img)}>
                                                 <img src={item.img} alt={item.name}/>
                                             </div>
@@ -130,7 +130,7 @@ const Page = () => {
                             {DETAIL.map((item) => {
                                 return(
                                     <div key={item.id}>
-                                        {item.id > 15 &&
+                                        {item.id > 12 &&
                                             <div className='Box-item_img-cover' onClick={() => router.push(item.img)}>
                                                 <img src={item.img} alt={item.name}/>
                                             </div>
