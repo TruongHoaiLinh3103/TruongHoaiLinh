@@ -11,12 +11,12 @@ export const DETAIL = [
     },
     {
       "id": 3,
-      "img": "https://i.pinimg.com/originals/b6/b8/02/b6b802f03919d258aeddf850e33b1b06.jpg",
+      "img": "https://i.pinimg.com/originals/05/aa/0f/05aa0f1f4d5e408906650f9a3b4fcef8.jpg",
       "name": "game"
     },
     {
       "id": 4,
-      "img": "https://i.pinimg.com/originals/4b/a3/a2/4ba3a236b05cd91a77127e5329aa9467.jpg",
+      "img": "https://i.pinimg.com/originals/3a/ae/be/3aaebe6c2c978f27b690fb41cffd6afc.jpg",
       "name": "game"
     },
     {
