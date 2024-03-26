@@ -16,7 +16,7 @@ export const DETAIL = [
     },
     {
       "id": 4,
-      "img": "https://i.pinimg.com/originals/fa/16/01/fa160100d155f22a049a637b18d12078.png",
+      "img": "https://i.pinimg.com/originals/6b/69/43/6b6943aa866a48a96f3501a00a6c7135.png",
       "name": "game"
     },
     {
@@ -76,7 +76,7 @@ export const DETAIL = [
     },
     {
       "id": 16,
-      "img": "https://i.pinimg.com/originals/fd/c2/bf/fdc2bf47cebe665486197d6aefd27a17.jpg",
+      "img": "https://i.pinimg.com/originals/50/56/ae/5056ae287578204613ad360faf725727.png",
       "name": "sport"
     }
 ]
