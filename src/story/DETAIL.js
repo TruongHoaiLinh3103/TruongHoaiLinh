@@ -16,7 +16,7 @@ export const DETAIL = [
     },
     {
       "id": 4,
-      "img": "https://i.pinimg.com/originals/6b/69/43/6b6943aa866a48a96f3501a00a6c7135.png",
+      "img": "https://i.pinimg.com/originals/4b/a3/a2/4ba3a236b05cd91a77127e5329aa9467.jpg",
       "name": "game"
     },
     {
@@ -61,12 +61,12 @@ export const DETAIL = [
     },
     {
       "id": 13,
-      "img": "https://i.pinimg.com/originals/66/36/4f/66364f9824b421c3f3b2d1f23ea743f6.png",
+      "img": "https://i.pinimg.com/originals/b2/ea/1f/b2ea1f24d50b2552b330398372353cac.jpg",
       "name": "sport"
     },
     {
       "id": 14,
-      "img": "https://i.pinimg.com/originals/83/14/81/831481b325e814d02d48da216b2f3d17.png",
+      "img": "https://i.pinimg.com/originals/8f/47/29/8f47290467ab1d313dbd50f3f2bf9ab7.jpg",
       "name": "sport"
     },
     {
@@ -76,7 +76,7 @@ export const DETAIL = [
     },
     {
       "id": 16,
-      "img": "https://i.pinimg.com/originals/50/56/ae/5056ae287578204613ad360faf725727.png",
+      "img": "https://i.pinimg.com/originals/45/bb/cf/45bbcff03a19cc5c95a383f12ea89f85.jpg",
       "name": "sport"
     }
 ]
