@@ -6,7 +6,7 @@ export const DETAIL = [
     },
     {
       "id": 2,
-      "img": "https://i.pinimg.com/originals/3e/1a/c9/3e1ac97d5b7e4196a5dbc9e93e760ae9.jpg",
+      "img": "https://i.pinimg.com/originals/e9/aa/b5/e9aab537cdff27c6cf76eab35a2364f2.jpg",
       "name": "game"
     },
     {
