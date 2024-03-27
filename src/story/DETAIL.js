@@ -6,7 +6,7 @@ export const DETAIL = [
     },
     {
       "id": 2,
-      "img": "https://i.pinimg.com/originals/e9/aa/b5/e9aab537cdff27c6cf76eab35a2364f2.jpg",
+      "img": "https://i.pinimg.com/originals/31/67/f5/3167f5e1691c913bd08aa1b6ed00d543.jpg",
       "name": "game"
     },
     {
@@ -16,7 +16,7 @@ export const DETAIL = [
     },
     {
       "id": 4,
-      "img": "https://i.pinimg.com/originals/3a/ae/be/3aaebe6c2c978f27b690fb41cffd6afc.jpg",
+      "img": "https://i.pinimg.com/originals/e9/aa/b5/e9aab537cdff27c6cf76eab35a2364f2.jpg",
       "name": "game"
     },
     {
@@ -61,17 +61,17 @@ export const DETAIL = [
     },
     {
       "id": 13,
-      "img": "https://i.pinimg.com/originals/b2/ea/1f/b2ea1f24d50b2552b330398372353cac.jpg",
+      "img": "https://i.pinimg.com/originals/a1/80/e8/a180e86a4e13c77a820951affed55017.jpg",
       "name": "sport"
     },
     {
       "id": 14,
-      "img": "https://i.pinimg.com/originals/8f/47/29/8f47290467ab1d313dbd50f3f2bf9ab7.jpg",
+      "img": "https://i.pinimg.com/originals/43/cc/c8/43ccc879ac920577ed010229d5bf97ef.jpg",
       "name": "sport"
     },
     {
       "id": 15,
-      "img": "https://i.pinimg.com/originals/43/cc/c8/43ccc879ac920577ed010229d5bf97ef.jpg",
+      "img": "https://i.pinimg.com/originals/3a/ae/be/3aaebe6c2c978f27b690fb41cffd6afc.jpg",
       "name": "sport"
     },
     {
