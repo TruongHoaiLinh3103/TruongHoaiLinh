@@ -6,7 +6,7 @@ import FetchLoading from '../../utils/FetchLoading';
 import FetchAOS from '../../utils/FetchAOS';
 import { useRouter } from 'next/navigation';
 import { DOCUMENT } from '../../story/DOCUMENT';
-import { FaBackward, FaBlogger, FaBible , FaFileContract, FaDownload } from "react-icons/fa";
+import { FaBackward, FaBible , FaFileContract, FaDownload } from "react-icons/fa";
 
 const Page = () => {
     const {check} = FetchLoading();
@@ -38,7 +38,6 @@ const Page = () => {
                     })}
                     <ul style={{margin: "20px 20px 0px"}}>
                         <li title='Menu' onClick={() => {router.push("/")}}><FaBackward /></li>
-                        <li title='Blog' onClick={() => {router.push("/blog")}}><FaBlogger /></li>
                         <li title='Project' onClick={() => {router.push("/project")}}><FaBible /></li>
                         <li title='Contact' onClick={() => {router.push("/contact")}}><FaFileContract /></li>
                     </ul>

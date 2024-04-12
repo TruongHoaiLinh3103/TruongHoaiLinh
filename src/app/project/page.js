@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import FetchAOS from "../../utils/FetchAOS";
-import { FaBackward, FaBlogger, FaAddressCard, FaFileContract } from "react-icons/fa";
+import { FaBackward, FaAddressCard, FaFileContract } from "react-icons/fa";
 
 const Page = () => {
     FetchAOS();
@@ -121,7 +121,6 @@ const Page = () => {
             <div style={{position: "absolute", top: 0, right: 20}} className='Skill_navigation'>
                 <ul style={{margin: "20px 20px 0px"}}>
                     <li title='Menu' onClick={() => {router.push("/")}}><FaBackward /></li>
-                    <li title='Blog' onClick={() => {router.push("/blog")}}><FaBlogger /></li>
                     <li title='About' onClick={() => {router.push("/about")}}><FaAddressCard  /></li>
                     <li title='Contact' onClick={() => {router.push("/contact")}}><FaFileContract /></li>
                 </ul>

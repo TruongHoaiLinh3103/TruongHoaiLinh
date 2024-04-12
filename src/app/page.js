@@ -15,9 +15,6 @@ export default function Home() {
                 <span data-texto="About" onClick={() => {router.push("/about")}}>About</span>
             </div>
             <div className='Navbar-box'>
-                <span data-texto="Blog" onClick={() => {router.push("/blog")}}>Blog</span>
-            </div>
-            <div className='Navbar-box'>
                 <span data-texto="Project" onClick={() => {router.push("/project")}}>Project</span>
             </div>
             <div className='Navbar-box'>
