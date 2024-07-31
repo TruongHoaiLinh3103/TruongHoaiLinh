@@ -5,14 +5,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     overflow: hidden;
-    position: relative;
-    background-image: url("https://i.pinimg.com/originals/80/7b/0d/807b0d00ea3aab1bdf89012248e9d97a.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
 }

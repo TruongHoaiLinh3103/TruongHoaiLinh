@@ -27,7 +27,7 @@ const Page = () => {
                 </div>
                 <ul>
                     <li title='Menu'><Link href="/"><FaBackward /></Link></li>
-                    <li title='Facebook' ><Link href='https://www.facebook.com/Anikey3103'><FaFacebook /></Link></li>
+                    <li title='Facebook' ><Link href='https://web.facebook.com/profile.php?id=61551727813662'><FaFacebook /></Link></li>
                     <li title='Github'><Link href='https://github.com/TruongHoaiLinh3103'><FaGithub /></Link></li>
                     <li title='Email'><Link href='mailto:truonghoailinh3103@gmail.com'><FaEnvelope /></Link></li>
                 </ul>
@@ -45,7 +45,7 @@ const Page = () => {
                                 typeSpeed={70}
                                 deleteSpeed={50}
                                 delaySpeed={1000}
-                                words={["Truong Hoai Linh.", "Anikey."]}
+                                words={["Truong Hoai Linh.", "Mavuika Anikey.", "Thuy Tuy Thien Khu."]}
                             /></h3>
                             <div style={{display: "flex", alignItems: "center"}}>
                                 <a href="https://truonghoailinh3103.github.io/AboutMe"><button className="botao__cor__perseguida" onMouseMove={(e) => gettingStarted(e)}>
