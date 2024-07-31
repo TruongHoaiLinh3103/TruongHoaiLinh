@@ -5,7 +5,7 @@ import "../../styles/Home.scss";
 import { Typewriter } from 'react-simple-typewriter';
 import FetchAOS from "../../utils/FetchAOS";
 import { DOCUMENT } from '../../story/DOCUMENT';
-import THL from "../../../public/bc269ba43638e066b929.jpg";
+import THL from "../../../public/avatar.jpg";
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaBackward, FaFacebook, FaGithub, FaEnvelope } from "react-icons/fa";
