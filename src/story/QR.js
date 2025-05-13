@@ -6,7 +6,7 @@ import git from "../../public/git.jpg"
 import instaram from "../../public/instaram.png"
 import zalo from "../../public/zalo.jpg"
 import vietinbankimg from "../../public/vietinbank.jpg"
-import pin from "../../public/pin.png"
+import pin from "../../public/Pin.png"
 export const QR = [
     {
         id: 1,
