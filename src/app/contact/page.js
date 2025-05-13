@@ -24,7 +24,7 @@ const Page = () => {
     const [navbar, setNavbar] = useState(false)
     FetchAOS();
     const alerAdress = () => {
-        alert("12/9 Tân Thới Nhất 5, Tân Thới Nhất, Quận 12, TP.HCM");
+        alert("Thôn Cảnh An, Xã Cát Tài, Huyện Phù Cát, Tỉnh Bình Định");
     }
     const checkNavbar = () => {
         setNavbar(!navbar)
@@ -113,13 +113,13 @@ const Page = () => {
                                     </ul>
                                 </button>
                             </div>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.676993776745!2d106.61073737483206!3d10.836012189316431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752bcce986a785%3A0x6538604bf47e8288!2zMTIgVMOibiBUaOG7m2kgTmjhuqV0IDUsIFTDom4gVGjhu5tpIE5o4bqldCwgUXXhuq1uIDEyLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1700558984358!5m2!1svi!2s" width="100%" height="100%" style={{border:0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990584.853096968!2d108.3266479981982!3d14.108312296819648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x316f2def6e711bbf%3A0x45bf4c043ae5fd37!2zQsOsbmggxJDhu4tuaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2sus!4v1747143374767!5m2!1svi!2sus" width="100%" height="100%" style={{border:0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                         </figure>
                         <div className="card__info">
                             <span className="card__name">
                                 Truong Hoai Linh
                                 <a href='mailto:truonghoailinh3103@gmail.com'><span className="card__ocupation">  truonghoailinh3103@gmail.com </span></a>
-                                <a href='tel:0356381315'><span className="card__ocupation">  0356381315 </span></a>
+                                <a href='tel:0963301494'><span className="card__ocupation">  0963301494 </span></a>
                                 <div className='card__banks'>
                                     <span className="card__ocupation" onClick={() => checkVTBank()}>  Vietinbank </span>
                                 </div>

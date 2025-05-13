@@ -45,7 +45,7 @@ const Page = () => {
                                 typeSpeed={70}
                                 deleteSpeed={50}
                                 delaySpeed={1000}
-                                words={["Truong Hoai Linh.", "Thuy Tuy Thien Khu."]}
+                                words={["Truong Hoai Linh.", "Mat.","Du Niem An."]}
                             /></h3>
                             <div style={{display: "flex", alignItems: "center"}}>
                                 <a href="https://truonghoailinh3103.github.io/AboutMe"><button className="botao__cor__perseguida" onMouseMove={(e) => gettingStarted(e)}>

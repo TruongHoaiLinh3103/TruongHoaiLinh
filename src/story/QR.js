@@ -1,12 +1,12 @@
 import fb from "../../public/fb.png"
-import SĐT from "../../public/SĐT.jpg"
+import SĐT from "../../public/SĐT.png"
 import email from "../../public/email.jpg"
-import tt from "../../public/tiktok.png"
+import tt from "../../public/tiktok.jpg"
 import git from "../../public/git.jpg"
-import instaram from "../../public/instaram.jpg"
+import instaram from "../../public/instaram.png"
 import zalo from "../../public/zalo.jpg"
 import vietinbankimg from "../../public/vietinbank.jpg"
-import pin from "../../public/pin.jpg"
+import pin from "../../public/pin.png"
 export const QR = [
     {
         id: 1,
